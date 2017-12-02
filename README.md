@@ -1,2 +1,2 @@
 # TAZ
-A fork of the slitaz linux distribution
+A fork of the gentoo linux distribution
