@@ -1,0 +1,67 @@
+http://www.calculate-linux.org/main/en/use_flags
+http://www.calculate-linux.org/packages/flags
+
+
+usr/portage/profiles/use.local.desc
+-->
++X
++ipv6
++jpeg
++jpeg2k
++svg
++flac
++ogg
++vorbis
++cdda
++opengl
++exif
++suid?
++udev?
++uclibc
++curl?
++libressl?
++upnp?
++ssl
++ldap?
++gnutls
++zeroconf
++crypt
++bzip2
++iconv
++cups
++python
++perl
++gtk
+-gtk3
+-qt4
+-qt5
+-nls
+-kde
+-gnome
+-systemd
+-dbus?
+-sqlite
+-policykit
+-calendar
+-debug
+-gnome-keyring
+-spell
+-pulseaudio
+
+
+/etc/portage/package.use
+-->
+lxde-base/lxpanel +alsa
+www-plugins/adobe-flash +nsplugin +ppapi
+x11-base/xorg-server +xorg +xvfb? +glamor?
+sys-apps/portage +ipc? +native-extensions?
+app-portage/layman +bazaar? +cvs? +darcs? +g-sorcery? +gpg? +mercurial? +subversion? +sync-plugin-portage? +sqlite? +git
+sys-block/gparted +btrfs +dmraid +f2fs +fat +hfs +jfs +mdadm +ntfs +reiser4 +reiserfs +xfs
+media-sound/alsaplayer +id3tag
+net-im/gajim +jingle
+sys-apps/firejail +x11
+media-video/mpv +alsa +vaapi
+mail-client/claws-mail +pgp +smime +spam-report +spamassassin
+app-admin/conky +rss +wifi
+net-fs/nfs-utils +nfsv4 +nfsv41
+net-voip/linphone +video
