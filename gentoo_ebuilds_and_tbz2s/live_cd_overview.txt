@@ -1,5 +1,5 @@
-Every year: new ebuilds are downloaded and tbz2's are updated
-tbz2's are made and then stored at github live cd project site;
+Every year: new gentoo ebuilds are downloaded and the tbz2's are updated
+tbz2's are made and then stored at the github live cd project site (ecomputing/TAZ/livecd);
 4 folders are placed herein:
 * x86_tbz2's
 * x86_64_tbz2's
