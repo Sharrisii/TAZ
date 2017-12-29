@@ -40,7 +40,6 @@ Regardless of the boot option chosen, the user will always log in as root, not a
 This, as no persistence will be present anyway, so there are no security issues.
 
 The livecd/liveusb won't feature a "install to HD" option as a frugal install (wich means that archives are saved to the HD, yet
-are written to RAM/tmpfs at boot) won't allow for persistence anyhow, so there's little point in having this option. Also, read
-speed of especially USB's are pretty high and less than 650 mb needs to be read anyhow and saved to RAM, so speed increases 
-(compared to HD's) even at this phase is negligable, and after the save to RAM, everything is read from RAM, so no speed gains
-can be had there neither.
+are written to RAM/tmpfs at boot) won't allow for persistence anyhow, so there's little point in having this option. Actually, not having it will also steer its users to not using a HD, meaning it can be omitted in the user's pc. Omitting the HD in the pc will make for a more environmentally friendly machine, and is hence a good thing. Also, read speed of especially USB's are
+-although slower than HD's- still pretty high and less than 650 mb needs to be read anyhow and saved to RAM.
+So, speed increases (compared to HD's) is -even at this phase-, negligable, and after the save to RAM, everything is read from RAM, so no speed gains can be had there neither.
