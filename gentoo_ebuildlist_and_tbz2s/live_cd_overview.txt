@@ -7,7 +7,7 @@ tbz2's are made and then stored at the github live cd project site (ecomputing/T
 * x86_64 bootable archives for livecd
 old tbz2's (of previous years) are placed in subfolders of the x86_tbz2's and x86_64_tbz2's folders
 The x86 bootable archives for livecd folder and the x86_64 bootable archives folder will both contain 
-the 9 different bootable archives to be started at boot. The bootable archives will be squashfs archives.
+the 8 different bootable archives to be started at boot. The bootable archives will be squashfs archives.
 Every year: a new live cd/USB image (ISO) and different bootable archives are made using the tbz2's
 
 Operating principles of the live cd:
