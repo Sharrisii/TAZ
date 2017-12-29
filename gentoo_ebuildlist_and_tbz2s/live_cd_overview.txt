@@ -7,14 +7,13 @@ tbz2's are made and then stored at the github live cd project site (ecomputing/T
 * x86_64 bootable archives for livecd
 old tbz2's (of previous years) are placed in subfolders of the x86_tbz2's and x86_64_tbz2's folders
 The x86 bootable archives for livecd folder and the x86_64 bootable archives folder will both contain the 9 different bootable archives to be started at boot. The bootable archives will be squashfs archives.
-Every year: a new live cd and different bootable archives are made using the tbz2's
+Every year: a new live cd/USB image (ISO) and different bootable archives are made using the tbz2's
 
 Operating principles of the live cd:
 
 The live cd will first show a first boot screen:
 * log in as root
 * log in as user (tux)
-* install SliTaz to HD
 
 Next, a second boot screen is shown, displaying the 8 different boot options, knowingly:
 Boot setup 1: core programs only
@@ -29,13 +28,9 @@ this technique is similar to http://doc.slitaz.org/en:guides:manyinone
 after selecting one of these options, it will copy all data of this setup option (core programs= 1 compressed file, additional programs = 1 additional compressed file) to RAM (tmpfs) and then boot this setup. The benefit of this approach is that the amount of RAM needed for the PC can remain relatively low, and the operating system will also be much faster
 
 Read/write abilities:
-Since the cd-r is read-only, the operating system never changes and can't become insecure.
+Since cd-r's are read-only, the operating system never changes (between boots) and can't become insecure.
 Upon boot, the data is written to ram (--> it will copy the archives to tmpfs so it runs from RAM), hence allowing the introduction of settings (for example to add log-in data to gajim, data for printer detection, ... so these can effectively be used). This login data will need to be entered every time the operating system is restarted, as settings are not storable. The browser will similarly lose all its history data with every restart, but during use, it will keep history data.
-Any important data generated (i.e. text documents, spreadsheets, powerpoint presentations, ...) can be saved to a usb stick. 
+Any important data generated (i.e. text documents, spreadsheets, powerpoint presentations, ...) can be saved to a usb stick.
 
 Notes:
-When the distro is installed to HD, the boot screen it will show will be different, knowingly:
-* log in as root + persistence
-* log in as user (tux) + persistence
-
-If no persistence is wanted for a particular computing session, the user can simply use the livecd instead (rather than starting the distro installed to the HD).
+The livecd/liveusb won't feature a "install to HD" option as a frugal install (wich means that archives are saved to the HD, yet are written to RAM/tmpfs at boot) won't allow for persistence anyhow, so there's little point in having this option. Also, read speed of especially USB's are pretty high and less than 650 mb needs to be read anyhow and saved to RAM, so speed increases (compared to HD's) even at this phase is negligable, and after the save to RAM, everything is read from RAM, so no speed gains can be had there neither.
