@@ -12,11 +12,7 @@ Every year: a new live cd/USB image (ISO) and different bootable archives are ma
 
 Operating principles of the live cd:
 
-The live cd will first show a first boot screen:
-* log in as root
-* log in as user (tux)
-
-Next, a second boot screen is shown, displaying the 8 different boot options, knowingly:
+A boot screen is shown, displaying the 8 different boot options, knowingly:
 Boot setup 1: core programs only
 Boot setup 2: core programs + system-config-printer + abiword + gnumeric
 Boot setup 3: core programs + impressive
@@ -39,6 +35,10 @@ browser will similarly lose all its history data with every restart, but during 
 Any important data generated (i.e. text documents, spreadsheets, powerpoint presentations, ...) can be saved to a usb stick.
 
 Notes:
+
+Regardless of the boot option chosen, the user will always log in as root, not as a user.
+This, as no persistence will be present anyway, so there are no security issues.
+
 The livecd/liveusb won't feature a "install to HD" option as a frugal install (wich means that archives are saved to the HD, yet
 are written to RAM/tmpfs at boot) won't allow for persistence anyhow, so there's little point in having this option. Also, read
 speed of especially USB's are pretty high and less than 650 mb needs to be read anyhow and saved to RAM, so speed increases 
