@@ -39,6 +39,8 @@ he wants better support than the standard x vesa-, printers, scanners, modems, .
 9th boot setup added to the livecd/liveusb which tells the system to include any squashfs archives placed on a usb stick in one
 of the free usb ports. No such boot setup will be present in the standard livecd so the user will need to add this manually (and
 make a new livecd or liveusb) and will also need to add the required squashfs archives on a usb stick.
+An alternative to this is -in case you have MS Windows (XP, 2000, ...) installed to a harddisk- to use MS Windows for those
+tasks you can't do in TAZ (due to lack of drivers).
 
 Notes:
 
