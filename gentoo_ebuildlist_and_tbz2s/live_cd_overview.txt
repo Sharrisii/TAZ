@@ -34,6 +34,12 @@ used). This login data will need to be entered every time the operating system i
 browser will similarly lose all its history data with every restart, but during use, it will keep history data.
 Any important data generated (i.e. text documents, spreadsheets, powerpoint presentations, ...) can be saved to a usb stick.
 
+A usb stick could potentially also be used to store additional packages (ie drivers for certain hardware like graphics cards -if
+he wants better support than the standard x vesa-, printers, scanners, modems, ...) and settings. This could be done by having a
+9th boot setup added to the livecd/liveusb which tells the system to include any squashfs archives placed on a usb stick in one
+of the free usb ports. No such boot setup will be present in the standard livecd so the user will need to add this manually (and
+make a new livecd or liveusb) and will also need to add the required squashfs archives on a usb stick.
+
 Notes:
 
 Regardless of the boot option chosen, the user will always log in as root, not as a user.
