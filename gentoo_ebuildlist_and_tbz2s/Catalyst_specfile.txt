@@ -29,7 +29,7 @@ sci-calculators/galculator (https://packages.gentoo.org/packages/sci-calculators
 dev-util/geany (https://packages.gentoo.org/packages/dev-util/geany)
 app-arch/xarchiver (https://packages.gentoo.org/packages/app-arch/xarchiver)
 media-gfx/gpicview (https://packages.gentoo.org/packages/media-gfx/gpicview)
-palemoon-overlay (https://github.com/Bfgeshka/octopus/blob/master/www-client/palemoon/palemoon-27.3.0.ebuild)
+palemoon-overlay (https://github.com/Bfgeshka/octopus/blob/master/www-client/palemoon/palemoon-27.6.0.ebuild)
 www-plugins/adobe-flash (https://packages.gentoo.org/packages/www-plugins/adobe-flash)
 net-im/gajim (https://packages.gentoo.org/packages/net-im/gajim)
 net-voip/linphone (https://packages.gentoo.org/packages/net-voip/linphone)
