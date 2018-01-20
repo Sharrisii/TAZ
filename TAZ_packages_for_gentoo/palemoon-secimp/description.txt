@@ -1,7 +1,7 @@
 The security improvements this package provide include:
 * adding of an autoconfig.js and Updated_about_config_settings.cfg to palemoon, hereby changing the settings to allow safer browsing 
 * removing of all non-ssl searches, and replacing it with ssl searches
-* adding of following extensions in xpi format to your /tmp/palemoon_extensions/ folder
+* adding of following plugins in xpi format to your /tmp/palemoon_extensions/ folder
 - cipherfox 4.2.0 (https://addons.palemoon.org/addon/cipherfox/)
 - encryptedweb 5.1.5 (https://addons.palemoon.org/addon/encrypted-web/)
 - noscript 2.6.9.39 (https://addons.palemoon.org/addon/noscript/ )
