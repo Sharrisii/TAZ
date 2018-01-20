@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Post-installation instructions</title>
+	<meta charset="utf-8" />
+	<style type="text/css">
+    body {
+		font: 80% sans-serif, verdana, arial; margin: 0; 
+	}
+    h1 {
+		padding: 8px; color: #000000; font-size: 20px; 
+		}
+    h2 {
+		color: #444; 
+		} 
+	h3 { color: #666; font-size: 140%; 
+		}
+	a {
+		text-decoration: none;
+		}
+    a:hover {
+		text-decoration: none;
+		}
+	p {
+		color: #000000;
+		}
+    #header {
+	background: #68BEE8;
+	height: 40px;
+	border-bottom: 8px solid #FFFC66;
+	text-align: center;
+	}
+	content {
+	margin: 40px 80px;
+	text-align: justify;
+	}
+   </style>
+</head>
+<body>
+	
+<div id="header">
+<h1>Post-installation instructions for pale moon</h1>
+</div>
+
+<!-- Start content -->
+<div id="content">
+
+<h2>Intro</h2>
+
+<p>Now that the palemoon-secimp package has already made your internet use more efficient (by blocking unnecessary internet connections 
+   and avoiding loss of surfing speed and personal time), we should do some extra changes to ensure that additional safety can be ensured.
+   These changes involve:<br />
+   * changing your DNS and locking it<br />
+   * stopping to use regular (non-SSL) search engines; for example by no longer visiting these websites directly, but instead by only using the new
+   SSL-search bar now added to your browser<br />
+   * using a passwords and user name reminder list<br />
+   * and backing up your google e-mails and google drive (if you use these) by using <a href="https://support.google.com/a/answer/100458?hl=en">Google Takeout</a>.
+   The same goes for any other similar IMAP services (like hotmail, ...). You can then save this personal data on a USB stick or an external harddisk. You can continue 
+   to use your Google e-mail account; the idea is just that if the account gets hacked, or you lose your password, you just don't lose your data.
+   </p>
+
+<h2>Changing your DNS server</h2>
+
+<p>Changing your DNS server is one of the most important things to do. By default, it will be set to the DNS servers of
+   your internet service provider (ISP). You best change it to a DNS server located in a neighbouring country. 
+   This because if you set it to a DNS server located further away, there might be a significant reduction of your surf speed. 
+   If you don't find any DNS servers in the list below that are located in your vicinity, you could also look up the DNS servers 
+   of another ISP in your own country -with whom you don't have an internet access account-, and change it to those (if this is allowed by this ISP).
+   Note also that you will appear to be a national of that country you used a DNS server of when surfing btw, which could be useful if you 
+   want to access certain web content (i.e. news videos, ...) that is blocked in the country you live in.<br /><br />
+   To change your DNS server, open the file "resolv.conf" located in /etc/, with an editor like Geany, Gedit, ...<br />
+   Next, change the 2 IP numbers listed by 2 numbers.<br />
+   Then, lock this file (even to root) to prevent DHCP clients of changing it again.<br />
+   Do this by typing "chattr +i /etc/resolv.conf" at the terminal. <br />
+   Note that if you ever need to be able to change it again, just type "chattr -i /etc/resolv.conf"<br />
+   <br />
+   You may want to check whether it has indeed changed your location though, just to be sure. To do so, use the "/sbin/ifconfig" command to show your own IP 
+   (your ip adress is the number after "inet addr", and then look up this adress via the command "curl ipinfo.io/yourIPadressnumber" or 
+   "curl freegeoip.net/xml/yourIPadressnumber" (you need to have curl installed for this to work) or use the command "geoiplookup yourIPadressnumber" (you 
+   need to have geoip-bin installed for this to work). Another way is to not to use the terminal at all, but instead just visit https://geoiptool.com/ via the browser.
+</p>
+
+<table class="wikitable sortable">
+<tr class="hintergrundfarbe5">
+<th width="18%">IPv4 </th><th width="10%">IPv6 </th><th width="10%">Pagefilter </th><th width="30%">Provider </th><th width="20%">Territory
+</th></tr>
+<tr>
+<td> 77.109.138.45
+</td><td>
+</td><td> <span style="font-size:0.9em;">no</span>
+</td><td> <a href="http://www.privacyfoundation.ch/de/service/server.html#dns-server" class="external text" rel="nofollow">Swiss Privacy Foundation</a>
+</td><td> Switzerland
+</td></tr>
+<tr>
+<td> 77.109.139.29
+</td><td>
+</td><td> <span style="font-size:0.9em;">no</span>
+</td><td> <a href="http://www.privacyfoundation.ch/de/service/server.html#dns-server" class="external text" rel="nofollow">Swiss Privacy Foundation</a>
+</td><td> Switzerland
+</td></tr>
+<tr>
+<td> 91.239.100.100
+</td><td>
+</td><td> <span style="font-size:0.9em;">no</span>
+</td><td> <a href="http://blog.censurfridns.dk/" class="external text" rel="nofollow">Censurfridns Denmark</a>
+</td><td> Denmark
+</td></tr>
+<tr>
+<td> 89.233.43.71
+</td><td>
+</td><td> <span style="font-size:0.9em;">no</span>
+</td><td> <a href="http://blog.censurfridns.dk/" class="external text" rel="nofollow">Censurfridns Denmark</a>
+</td><td> Denmark
+</td></tr>
+<tr>
+<td> 37.235.1.174 
+</td><td>
+</td><td> <span style="font-size:0.9em;">no</span>
+</td><td> <a href="http://freedns.zone/de/" class="external text" rel="nofollow">FreeDNS</a>
+</td><td> Germany
+</td></tr>
+<tr>
+<td> 37.235.1.177
+</td><td>
+</td><td> <span style="font-size:0.9em;">no</span>
+</td><td> <a href="http://freedns.zone/de/" class="external text" rel="nofollow">FreeDNS</a>
+</td><td> Germany
+</td></tr>
+<tr>
+<td> 85.214.20.141
+</td><td>
+</td><td> <span style="font-size:0.9em;">no</span>
+</td><td> <a href="https://digitalcourage.de/support/zensurfreier-dns-server" class="external text" rel="nofollow">Digitalcourage e.V.</a>
+</td><td> Germany
+</td></tr>
+<tr>
+<td> 85.214.73.63
+</td><td>
+</td><td> <span style="font-size:0.9em;">no</span>
+</td><td> <a href="http://www.foebud.org/aboutus/gegen-internetsperren-in-einer-freien-gesellschaft-foebud-richtet-anti-zensur-dns-server-ein/" class="external text" title="http://www.foebud.org/aboutus/gegen-internetsperren-in-einer-freien-gesellschaft-foebud-richtet-anti-zensur-dns-server-ein/" rel="nofollow">FoeBuD e.V.</a>
+</td><td> Germany
+</td></tr>
+<tr>
+<td> 87.118.100.175
+</td><td>
+</td><td> <span style="font-size:0.9em;">no</span>
+</td><td> <a href="http://server.privacyfoundation.de/" class="external text" title="http://server.privacyfoundation.de/" rel="nofollow">German Privacy Foundation e.V.</a>
+</td><td> Germany
+</td></tr>
+<tr>
+<td> 94.75.228.29
+</td><td>
+</td><td> <span style="font-size:0.9em;">no</span>
+</td><td> German Privacy Foundation e.V.
+</td><td> Germany
+</td></tr>
+<tr>
+<td> 85.25.251.254
+</td><td>
+</td><td> <span style="font-size:0.9em;">no</span>
+</td><td> German Privacy Foundation e.V.
+</td><td> Germany
+</td></tr>
+<tr>
+<td> 62.141.58.13
+</td><td>
+</td><td> <span style="font-size:0.9em;">no</span>
+</td><td> German Privacy Foundation e.V.
+</td><td> Germany
+</td></tr>
+<tr>
+<td> 213.73.91.35
+</td><td>
+</td><td> <span style="font-size:0.9em;">no</span>
+</td><td> Chaos Computer Club Berlin
+</td><td> Germany
+</td></tr>
+<tr>
+<td> 212.82.225.7
+</td><td>
+</td><td> <span style="font-size:0.9em;">no</span>
+</td><td> ClaraNet
+</td><td> Germany
+</td></tr>
+<tr>
+<td> 212.82.226.212
+</td><td>
+</td><td> <span style="font-size:0.9em;">no</span>
+</td><td> ClaraNet
+</td><td> Germany
+</td></tr>
+<tr>
+<td> 208.67.222.222
+</td><td>
+</td><td> <span style="font-size:0.9em;">only malicious</span>
+</td><td> <a href="http://www.opendns.com/" class="external text" title="http://www.opendns.com/" rel="nofollow">OpenDNS</a>
+</td><td> USA
+</td></tr>
+<tr>
+<td> 208.67.220.220
+</td><td>
+</td><td> <span style="font-size:0.9em;">only malicious</span>
+</td><td> OpenDNS
+</td><td> USA
+</td></tr>
+<tr>
+<td> 58.6.115.42
+</td><td>
+</td><td> <span style="font-size:0.9em;">no</span>
+</td><td> <a href="http://www.opennicproject.org/" class="external text" title="http://www.opennicproject.org/" rel="nofollow">OpenNIC</a>
+</td><td> Australia
+</td></tr>
+<tr>
+<td> 58.6.115.43
+</td><td>
+</td><td> <span style="font-size:0.9em;">no</span>
+</td><td> OpenNIC
+</td><td> Australia
+</td></tr>
+<tr>
+<td> 119.31.230.42
+</td><td>
+</td><td> <span style="font-size:0.9em;">no</span>
+</td><td> OpenNIC
+</td><td> Australia
+</td></tr>
+<tr>
+<td> 200.252.98.162
+</td><td>
+</td><td> <span style="font-size:0.9em;">no</span>
+</td><td> OpenNIC
+</td><td> Brazil
+</td></tr>
+<tr>
+<td> 217.79.186.148
+</td><td>
+</td><td> <span style="font-size:0.9em;">no</span>
+</td><td> OpenNIC
+</td><td> Germany
+</td></tr>
+<tr>
+<td> 81.89.98.6
+</td><td>
+</td><td> <span style="font-size:0.9em;">no</span>
+</td><td> OpenNIC
+</td><td> Germany
+</td></tr>
+<tr>
+<td> 78.159.101.37
+</td><td>
+</td><td> <span style="font-size:0.9em;">no</span>
+</td><td> OpenNIC
+</td><td> Germany
+</td></tr>
+<tr>
+<td> 203.167.220.153
+</td><td>
+</td><td> <span style="font-size:0.9em;">no</span>
+</td><td> OpenNIC
+</td><td> New Zealand
+</td></tr>
+<tr>
+<td> 82.229.244.191
+</td><td>
+</td><td> <span style="font-size:0.9em;">no</span>
+</td><td> OpenNIC
+</td><td> France
+</td></tr>
+<tr>
+<td> 82.229.244.191
+</td><td>
+</td><td> <span style="font-size:0.9em;">no</span>
+</td><td> OpenNIC
+</td><td> Czechia
+</td></tr>
+<tr>
+<td> 216.87.84.211
+</td><td>
+</td><td> <span style="font-size:0.9em;">no</span>
+</td><td> OpenNIC
+</td><td> USA
+</td></tr>
+<tr>
+<td>
+</td><td> 2001:470:8388:2:20e:2eff:fe63:d4a9
+</td><td> <span style="font-size:0.9em;">no</span>
+</td><td> OpenNIC
+</td><td> USA
+</td></tr>
+<tr>
+<td>
+</td><td> 2001:470:1f07:38b::1
+</td><td> <span style="font-size:0.9em;">no</span>
+</td><td> OpenNIC
+</td><td> USA
+</td></tr>
+<tr>
+<td> 66.244.95.20
+</td><td>
+</td><td> <span style="font-size:0.9em;">no</span>
+</td><td> OpenNIC
+</td><td> USA
+</td></tr>
+<tr>
+<td>
+</td><td> 2001:470:1f10:c6::2
+</td><td> <span style="font-size:0.9em;">no</span>
+</td><td> OpenNIC
+</td><td> USA
+</td></tr>
+<tr>
+<td> 207.192.69.155
+</td><td>
+</td><td> <span style="font-size:0.9em;">no</span>
+</td><td> OpenNIC
+</td><td> USA
+</td></tr>
+<tr>
+<td> 72.14.189.120
+</td><td>
+</td><td> <span style="font-size:0.9em;">no</span>
+</td><td> OpenNIC
+</td><td> USA
+</td></tr>
+<tr>
+<td> 156.154.70.1
+</td><td>
+</td><td> <span style="font-size:0.9em;">only malicious</span>
+</td><td> <a href="http://www.dnsadvantage.com/" class="external text" title="http://www.dnsadvantage.com/" rel="nofollow">DNS Advantage</a>
+</td><td> USA
+</td></tr>
+<tr>
+<td> 156.154.71.1
+</td><td>
+</td><td> <span style="font-size:0.9em;">only malicious</span>
+</td><td> DNS Advantage
+</td><td> USA
+</td></tr>
+<tr>
+<td> 156.154.70.22
+</td><td>
+</td><td> <span style="font-size:0.9em;">only malicious</span>
+</td><td> <a href="http://www.comodo.com/secure-dns/" class="external text" title="http://www.comodo.com/secure-dns/" rel="nofollow">Comodo Secure DNS</a>
+</td><td> USA
+</td></tr>
+<tr>
+<td> 156.154.71.22
+</td><td>
+</td><td> <span style="font-size:0.9em;">only malicious</span>
+</td><td> Comodo Secure DNS
+</td><td> USA
+</td></tr>
+<tr>
+<td> 194.145.226.26
+</td><td>
+</td><td> <span style="font-size:0.9em;">no</span>
+</td><td> <a href="http://www.powerns.de/" class="external text" title="http://www.powerns.de/" rel="nofollow">PowerNS</a>
+</td><td> Germany
+</td></tr>
+<tr>
+<td> 77.220.232.44
+</td><td>
+</td><td> <span style="font-size:0.9em;">no</span>
+</td><td> PowerNS
+</td><td> Germany
+</td></tr>
+<tr>
+<td> 78.46.89.147
+</td><td>
+</td><td> <span style="font-size:0.9em;">no</span>
+</td><td> <a href="http://validom.net/blog/2009/04/21/freie-nameserver-von-validom/" class="external text" title="http://validom.net/blog/2009/04/21/freie-nameserver-von-validom/" rel="nofollow">ValiDOM</a>
+</td><td> Germany
+</td></tr>
+<tr>
+<td> 88.198.75.145
+</td><td>
+</td><td> <span style="font-size:0.9em;">no</span>
+</td><td> ValiDOM
+</td><td> Germany
+</td></tr>
+<tr>
+<td> 216.129.251.13
+</td><td>
+</td><td> <span style="font-size:0.9em;">no</span>
+</td><td> <a href="http://anonym.to/?http://www.jscmarketing.com/index.php?option=com_content&amp;task=view&amp;id=64&amp;Itemid=23&amp;faqCatid=12#goto:22" class="external text" title="http://anonym.to/?http://www.jscmarketing.com/index.php?option=com_content&amp;task=view&amp;id=64&amp;Itemid=23&amp;faqCatid=12#goto:22" rel="nofollow">JSC Marketing</a>
+</td><td> USA
+</td></tr>
+<tr>
+<td> 66.109.128.213
+</td><td>
+</td><td> <span style="font-size:0.9em;">no</span>
+</td><td> JSC Marketing
+</td><td> USA
+</td></tr>
+<tr>
+<td> 171.70.168.183
+</td><td>
+</td><td> <span style="font-size:0.9em;">no</span>
+</td><td> Cisco Systems
+</td><td> USA
+</td></tr>
+<tr>
+<td> 171.69.2.133
+</td><td>
+</td><td> <span style="font-size:0.9em;">no</span>
+</td><td> Cisco Systems
+</td><td> USA
+</td></tr>
+<tr>
+<td> 128.107.241.185
+</td><td>
+</td><td> <span style="font-size:0.9em;">no</span>
+</td><td> Cisco Systems
+</td><td> USA
+</td></tr>
+<tr>
+<td> 64.102.255.44
+</td><td>
+</td><td> <span style="font-size:0.9em;">no</span>
+</td><td> Cisco Systems
+</td><td> USA
+</td></tr>
+<tr>
+<td> 85.25.149.144
+</td><td>
+</td><td> <span style="font-size:0.9em;">no</span>
+</td><td> <a href="http://fdnsserv.de/" class="external text" title="http://fdnsserv.de/" rel="nofollow">Freie Unzensierte Nameserver</a>
+</td><td> Germany
+</td></tr>
+<tr>
+<td> 87.106.37.196
+</td><td>
+</td><td> <span style="font-size:0.9em;">no</span>
+</td><td> Freie Unzensierte Nameserver
+</td><td> Germany
+</td></tr>
+<tr>
+<td> 209.59.210.167
+</td><td>
+</td><td> <span style="font-size:0.9em;">no</span>
+</td><td> <a href="http://www.hochstaetter.org/" class="external text" title="http://www.hochstaetter.org/" rel="nofollow">Christoph Hochstätter</a>
+</td><td> USA
+</td></tr>
+<tr>
+<td> 85.214.117.11
+</td><td>
+</td><td> <span style="font-size:0.9em;">no</span>
+</td><td> Christoph Hochstätter
+</td><td> Germany
+</td></tr>
+<tr>
+<td> 83.243.5.253
+</td><td> 2a01:198:16::5253
+</td><td> <span style="font-size:0.9em;">no</span>
+</td><td> private
+</td><td> Germany
+</td></tr>
+<tr>
+<td> 88.198.130.211
+</td><td>
+</td><td> <span style="font-size:0.9em;">no</span>
+</td><td> private
+</td><td> Germany
+</td></tr>
+<tr>
+<td> 92.241.164.86
+</td><td>
+</td><td> <span style="font-size:0.9em;">no</span>
+</td><td> private <span style="color:rgb(51, 51, 51); font-size:0.7em;">(i-root.cesidio.net, cesidio root included)</span>
+</td><td> Russia
+</td></tr>
+<tr>
+<td> 85.10.211.244
+</td><td>
+</td><td> <span style="font-size:0.9em;">no</span>
+</td><td> private
+</td><td> Germany
+</td></tr>
+<tr>
+<td> 8.8.8.8
+</td><td>
+</td><td> <span style="font-size:0.9em;">no</span> (<a href="http://code.google.com/speed/public-dns/docs/intro.html" class="external text" title="http://code.google.com/speed/public-dns/docs/intro.html" rel="nofollow">info</a>)
+</td><td> <a href="http://code.google.com/speed/public-dns/" class="external text" title="http://code.google.com/speed/public-dns/" rel="nofollow">Google Public DNS</a>
+</td><td> USA
+</td></tr>
+<tr>
+<td> 8.8.4.4
+</td><td>
+</td><td> <span style="font-size:0.9em;">no</span>
+</td><td> Google Public DNS
+</td><td> USA
+</td></tr>
+</table>
+<!-- The information above is subject to change, but accurate at the time of writing (2015)-->
+
+<h2>Making a passwords and user name reminder list</h2>
+<p>
+	Perhaps surprisingly, but the largest threat of losing access to web services, e-mail accounts, ... comes not
+	from hackers, ... but from you yourself. At a time when web admins all over the world are pushing for using
+	more difficult/complicated passwords (which combine letters and numbers and require a minimum of a certain amount of
+	characters), the best way to prevent you losing access to your accounts is by using simpler passwords (as simple as
+	allowed by the web admins) yet using different ones for every web service and by keeping a text file with all your 
+	passwords and user names per web server (which we call a "passwords and user name reminder list).<br />
+	The best place to store such a text file is on an external drive (USB stick or external hard disk), and having this 
+	drive connected only when you really need it (preferably when you don't have an active internet connection). If you
+	really want, you can make this text file password-protected by using a tool such as keepassx.<br />
+	Then, for the user names and passwords you should use: the reason why we advocate simpler passwords is because, although you 
+	now have a passwords and user name reminder list (and you can theoretically thus use very complex passwords and
+	user names, the idea isn't that you keep the external drive the file is on continuously connected, so you can't use it to 
+	"peek" into it and copy/paste the data herein (for example into your browser, when you surf to your web service). 
+	Rather, you can only write it over to a piece of paper and keep this besides your computer instead (to peek to this 
+	and type it over manually), or you just learn it by head. Often, it might still be easiest to just know it out of your head, 
+	and then more simple passwords and user names are easier to remember; also, they're faster to type in. <br /><br />
+	
+	Experience has learned, that using long/difficult passwords and user names aren't that much safer, due to
+	the danger of losing such passwords and user names, and then no longer remembering them as they're so difficult and because
+	hackers have more chance of finding your user name and password by trying out old passwords and user names they might of
+	acquired from you and which you used on other web services (and which you are continuing to use on new, other services) rather
+	than the chance they have of finding it via brute-force attacks (against which, more complicated user names and passwords indeed
+	offer more protection).<br />
+	So, besides using simpler passwords user names, just make sure you use different passwords and user names for each web service you use,
+	and keep all these in the passwords and user names reminder list. If need be, you can keep using a same user name
+	with all your web services (just make sure it isn't your real name) and even just vary the passwords per web service marginally (i.e. 
+	if you use the password "kft123", you can use "kft456" for example on a different web service.
+</p>
+
+<h2>Launching a sandboxed Pale Moon</h2>
+<p>
+Another security protection you could take is installing the firejail-secimp_settings package, and running pale moon inside it.<br />
+More information on how to do this can be found in the html installed by that package.
+</p>
+
+<h2>First run of Pale Moon</h2>
+<p> The first time you start Pale Moon, it may display an installation dialog, with the text "The following items were found in your Extensions folder. 
+    Do you want to install them?" Make sure you select yes, because if you don't the plugins won't be installed, meaning you won't be protected by them.</p>
+
+<h2>Updating Pale Moon, up and downloading, adding plugins and displaying content</h2>
+<p>
+	Pale Moon has been set to no longer automatically update, since updating it might result in compatibility problems 
+	with the plugins added, causing them to no longer function, and thus fail in protecting you. You can change this temporarily in 
+	Pale Moon, if you are sure that updating won't cause compatibility problems with the plugins, for example if new versions 
+	of the plugins have come out, or if the Pale Moon update is known not to cause compatibility problems.<br /><br />
+	
+	For uploading and downloading: when you download a file it will now be saved at /home/tux/up_and_downloads instead
+	of /home/username/downloads. This folder now acts as a corridor for both downloading and uploading files, which means 
+	that you can no longer select a folder anywhere on your hard disk to download files to; instead it needs to be always 
+	downloaded to /home/tux/up_and_downloads. The same goes for uploading: before you upload any file, you need to manually 
+	move or copy the file to /home/tux/up_and_downloads to be able to then upload it. Note that if you don't have the username "tux",
+	you can change it manually in about:preferences in palemoon.<br /><br />
+	
+	Regarding the adding of new plugins: this is still possible, but make sure you temporarily disable the "User agent overrider" 
+	plugin before you visit the Pale Moon extensions page. Else, it won't work (at least not if you chosen a different user 
+	agent as your current browser; this is something you best do btw for regular surfing).<br /><br />
+	
+	For surfing to/using certain websites, you may need .SWF playing and/or javascript capability. This is blocked currently 
+	by the noscript plugin. So to re-enable it, you must disable the noscript plugin temporarily (when not necessary, 
+	re-enable noscript as it is an essential security element).<br /><br />
+	
+	Note that if you need flash for viewing certain youtube video's, embedded in websites, you can also use mps-youtube 
+	(start it using the "mps-youtube" command) in "Run program"). On the webpage's source (just right-click 
+	in Pale Moon, and select "View Page Source"), you should be able to find the details to find and run the same video in 
+	mps-youtube. This method thus allows you to circumvent the process of disabling/enabling noscript, and it's also much 
+	safer, as the mps-youtube does not use flash, and there are, as such, no security risks involved with this method, 
+	whereas when you disable noscript, and then run the youtube flash-applet, there certainly are.  
+</p>
+
+<!-- End content -->
+</div>
+
+</body>
+</html>
