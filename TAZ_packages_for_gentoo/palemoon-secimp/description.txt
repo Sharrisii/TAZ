@@ -1,0 +1,5 @@
+The security improvements this package provide include:
+* adding of an autoconfig.js and Updated_about_config_settings.cfg to palemoon, hereby changing the settings to allow safer browsing 
+* removing of all non-ssl searches, and replacing it with ssl searches
+* adding of CipherFox, disconnect, encryptedweb, noscript, ublock-origin and user_agent_overrrider plugin in xpi format to your /tmp/palemoon_extensions/ folder
+* adding of a postinstallation_palemoon.html to your /home/tux/up_and_downloads folder and setting the start page of palemoon to that html page
