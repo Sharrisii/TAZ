@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+	"DuckDuckGo (SSL)" Firefox Search Add-on
+	Author: SSL Search Boxes
+	Version: 20101029 (October 29, 2010)
+	Description: DuckDuckGo is a search engine that does not collect or share personally identifiable information. This search bar add-on utilizes SSL to protect searches between You and DuckDuckGo.
+	Privacy Policy: https://duckduckgo.com/privacy.html
+	Country code: en-US
+
+-->
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
+                       xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+<ShortName>DuckDuckGo (SSL)</ShortName>
+<Description>DuckDuckGo is a search engine that does not collect or share personally identifiable information. This search bar add-on utilizes SSL to protect searches between You and DuckDuckGo.</Description>
+<InputEncoding>UTF-8</InputEncoding>
+<Image width="16" height="16" type="image/x-icon">https://duckduckgo.com/favicon.ico</Image>
+<Url type="text/html" method="POST" template="https://duckduckgo.com/">
+ <Param name="q" value="{searchTerms}"/>
+ <Param name="kg" value="p"/>
+</Url>
+<moz:SearchForm>https://duckduckgo.com/</moz:SearchForm>
+</OpenSearchDescription>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+	"Google (SSL)" Firefox Search Add-on
+	Author: SSL Search Boxes
+	Version: 20111023 (October 23, 2011)
+	Description: Google is the world's most popular search engine. This search bar add-on utilizes SSL to protect searches between You and Google, but it does not make you anonymous (remember, Google logs and retains all search queries and IP addresses).
+	Privacy Note: All search terms are utilized and maintained by Google in accordance with their Privacy Policy. Google uses cookies; logs and retains search terms, IP addresses, and other personally identifiable information. Google anonymizes IP addresses after 9 months and cookies in search engine logs after 18 months.
+	Privacy Policy: https://www.google.com/intl/en/privacy.html
+	Country code: en-US
+
+-->
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
+                       xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+<ShortName>Google (SSL)</ShortName>
+<Description>Google is the world's most popular search engine. This search bar add-on utilizes SSL to protect searches between You and Google, but it does not make you anonymous (remember, Google logs and retains all search queries and IP addresses).</Description>
+<InputEncoding>UTF-8</InputEncoding>
+<Image width="16" height="16" type="image/x-icon">https://www.google.com/favicon.ico</Image>
+<Url type="text/html" method="GET" template="https://www.google.com/search">
+  <Param name="q" value="{searchTerms}"/>
+  <Param name="ie" value="utf-8"/>
+  <Param name="oe" value="utf-8"/>
+</Url>
+<Url type="application/x-suggestions+json" method="GET" template="https://clients1.google.com/complete/search?output=firefox&amp;q={searchTerms}"/>
+<moz:SearchForm>https://www.google.com/</moz:SearchForm>
+</OpenSearchDescription>

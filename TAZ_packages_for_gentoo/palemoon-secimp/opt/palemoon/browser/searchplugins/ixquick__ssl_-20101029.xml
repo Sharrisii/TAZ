@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+	"Ixquick (SSL)" Firefox Search Add-on
+	Author: SSL Search Boxes
+	Version: 20101029 (October 29, 2010)
+	Description: Ixquick is a search engine that does not collect or share personally identifiable information. This search bar add-on utilizes SSL to protect searches between You and Ixquick.
+	Privacy Policy: https://ixquick.com/eng/privacy-policy.html
+	Country code: en-US
+
+-->
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
+                       xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+<ShortName>Ixquick (SSL)</ShortName>
+<Description>Ixquick is a search engine that does not collect or share personally identifiable information. This search bar add-on utilizes SSL to protect searches between You and Ixquick.</Description>
+<InputEncoding>UTF-8</InputEncoding>
+<Image width="16" height="16" type="image/x-icon">https://ixquick.com/favicon.ico</Image>
+<Url type="text/html" method="POST" template="https://ixquick.com/do/metasearch.pl">
+   <Param name="query" value="{searchTerms}"/>
+   <Param name="cat" value="web"/>
+   <Param name="language" value="english"/>
+</Url>
+<moz:SearchForm>https://ixquick.com/</moz:SearchForm>
+</OpenSearchDescription>
