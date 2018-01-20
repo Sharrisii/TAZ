@@ -1,5 +1,10 @@
 The security improvements this package provide include:
 * adding of an autoconfig.js and Updated_about_config_settings.cfg to palemoon, hereby changing the settings to allow safer browsing 
 * removing of all non-ssl searches, and replacing it with ssl searches
-* adding of cipherfox, encryptedweb, noscript, ublock-origin and eclipsed moon plugin in xpi format to your /tmp/palemoon_extensions/ folder
+* adding of following extensions in xpi format to your /tmp/palemoon_extensions/ folder
+- cipherfox 4.2.0 (https://addons.palemoon.org/addon/cipherfox/)
+- encryptedweb 5.1.5 (https://addons.palemoon.org/addon/encrypted-web/)
+- noscript 2.6.9.39 (https://addons.palemoon.org/addon/noscript/ )
+- ublock-origin 1.14.25rc1 (https://github.com/gorhill/uBlock/releases)
+- eclipsed moon 1.04 (https://addons.palemoon.org/addon/eclipsedmoon/)
 * adding of a postinstallation_palemoon.html to your /home/tux/up_and_downloads folder and setting the start page of palemoon to that html page
