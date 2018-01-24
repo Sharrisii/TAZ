@@ -22,5 +22,4 @@ The filenames and id's in the install.rdf file were made into:
 eclipsed moon: {8de7fcbb-c55c-4fbe-bfc5-fc555c89dbc7}
 encryptedweb: {8de7fcbb-c55c-4fbe-bfc5-fc555c48dbc9}
 
-I then reverted back to user_agent_overrider-0.2.4.xpi yet altered the install.rdf (changing the id from 
-{ec8030f7-c20a-464f-9b0e-13a3a9e97384} to {ec8030f7-c20a-464f-9b0e-13a3a9e28485} ).
+I then reverted back to user_agent_overrider-0.2.4.xpi (as I didn't like eclipsed moon) yet altered the install.rdf (changing the id from {ec8030f7-c20a-464f-9b0e-13a3a9e97384} to {ec8030f7-c20a-464f-9b0e-13a3a9e28485} ).
