@@ -15,10 +15,10 @@ app-portage/layman (https://packages.gentoo.org/packages/app-portage/layman)
 sys-block/gparted (https://packages.gentoo.org/packages/sys-block/gparted)
 app-admin/hardinfo (https://packages.gentoo.org/packages/app-admin/hardinfo)
 sys-apps/man-pages (https://packages.gentoo.org/packages/sys-apps/man-pages)
-lxde-base/lxpanel (https://packages.gentoo.org/categories/lxde-base )
-lxde-base/lxrandr
-lxde-base/lxsession
-lxde-base/lxtask
+lxde-base/lxpanel (https://packages.gentoo.org/categories/lxde-base/lxpanel)
+lxde-base/lxrandr (https://packages.gentoo.org/categories/lxde-base/lxrandr)
+lxde-base/lxsession (https://packages.gentoo.org/categories/lxde-base/lxsession)
+lxde-base/lxtask (https://packages.gentoo.org/categories/lxde-base/lxtask)
 x11-terms/sakura (https://packages.gentoo.org/packages/x11-terms/sakura)
 app-editors/nano (https://packages.gentoo.org/packages/app-editors/nano)
 lxde-base/lxinput (https://packages.gentoo.org/packages/lxde-base/lxinput)
@@ -29,7 +29,7 @@ sci-calculators/galculator (https://packages.gentoo.org/packages/sci-calculators
 dev-util/geany (https://packages.gentoo.org/packages/dev-util/geany)
 app-arch/xarchiver (https://packages.gentoo.org/packages/app-arch/xarchiver)
 media-gfx/gpicview (https://packages.gentoo.org/packages/media-gfx/gpicview)
-palemoon-overlay (https://github.com/Bfgeshka/octopus/blob/master/www-client/palemoon/palemoon-27.6.0.ebuild)
+palemoon (https://github.com/Bfgeshka/octopus/blob/master/www-client/palemoon/palemoon-27.6.0.ebuild)
 www-plugins/lightspark (https://packages.gentoo.org/packages/www-plugins/lightspark)
 net-im/gajim (https://packages.gentoo.org/packages/net-im/gajim)
 net-voip/linphone (https://packages.gentoo.org/packages/net-voip/linphone)
@@ -44,6 +44,7 @@ app-cdr/xfburn (https://packages.gentoo.org/packages/app-cdr/xfburn)
 pypar2 (https://bugs.gentoo.org/show_bug.cgi?id=141705)
 net-p2p/transmission (https://packages.gentoo.org/packages/net-p2p/transmission)
 app-admin/conky (https://packages.gentoo.org/packages/app-admin/conky)
+eid-mw (https://packages.gentoo.org/packages/app-crypt/eid-mw)
 
 Home-made packages (part of core programs)
 palemoon-secimp
