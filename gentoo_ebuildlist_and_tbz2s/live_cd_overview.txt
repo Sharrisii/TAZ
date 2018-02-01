@@ -35,7 +35,7 @@ browser will similarly lose all its history data with every restart, but during 
 Any important data generated (i.e. text documents, spreadsheets, powerpoint presentations, ...) can be saved to a usb stick.
 
 A usb stick could potentially also be used to store additional packages (ie drivers for certain hardware like graphics cards -if
-he wants better support than the standard x vesa-, printers, scanners, modems, ...) and settings. This could be done by having a
+he wants better support than the standard x vesa-, printers, scanners, modems, ...) and settings. Any programs that require the presence of special drivers (i.e. Blender, ...) could also be added. This could be done by having a
 9th boot setup added to the livecd/liveusb which tells the system to include any squashfs archives placed on a usb stick in one
 of the free usb ports. No such boot setup will be present in the standard livecd so the user will need to add this manually (and
 make a new livecd or liveusb) and will also need to add the required squashfs archives on a usb stick.
