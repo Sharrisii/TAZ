@@ -44,7 +44,6 @@ app-cdr/xfburn (https://packages.gentoo.org/packages/app-cdr/xfburn)
 pypar2 (https://bugs.gentoo.org/show_bug.cgi?id=141705)
 net-p2p/transmission (https://packages.gentoo.org/packages/net-p2p/transmission)
 app-admin/conky (https://packages.gentoo.org/packages/app-admin/conky)
-eid-mw (https://packages.gentoo.org/packages/app-crypt/eid-mw)
 
 Home-made packages (part of core programs)
 palemoon-secimp
