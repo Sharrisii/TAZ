@@ -5,5 +5,5 @@ The TAZ livecd's differ from the official x86 and x86_64 gentoo livecd's by bein
 rather small (able to fit on a cd) while still having full livecd functionality (so not just an install cd).
 The binary packages -tbz2's- are also made available at the TAZ github site. 
 Two versions of the tbz2's are made, knowingly x86_tbz2's and x86_64_tbz2's.
-The bootable images (livecd's) -made from the tbz2's- are also spiced with some extra (TAZ) packages. 
-These extra TAZ packages for gentoo (that change it to SecuriTAZ) can be found at https://github.com/ecocomputing/gentoo-overlay
+
+Extra packages for gentoo (that change TAZ into SecuriTAZ) can be found at https://github.com/ecocomputing/gentoo-overlay
