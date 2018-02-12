@@ -76,4 +76,5 @@ media-video/mpv (https://packages.gentoo.org/packages/media-video/mpv)
 Boot setup 8 add-on programs:
 mail-client/claws-mail (https://packages.gentoo.org/packages/mail-client/claws-mail)
 
-Note that besides these packages, the system will require a lot more packages (dependencies), but these should be found and added automatically by portage.
+Note that besides these packages, the system will require a lot more packages (dependencies), but these should be found and
+added automatically by portage.
