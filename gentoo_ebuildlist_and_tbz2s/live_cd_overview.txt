@@ -23,7 +23,7 @@ Boot setup 7: core programs + mpv
 Boot setup 8: core programs + Claws mail
 this technique is similar to http://doc.slitaz.org/en:guides:manyinone
 after selecting one of these options, it will copy all data of this setup option (core programs= 1 compressed file, additional
-programs = 1 additional compressed file) to RAM (tmpfs) , add the command "setxkbmap -layout be", and then boot this setup. 
+programs = 1 additional compressed file) to RAM (tmpfs) , and then boot this setup. 
 The benefit of this approach is that the amount of RAM needed for the PC can remain relatively low, and the operating system
 will also be much faster
 
@@ -56,3 +56,9 @@ Omitting the HD in the pc will make for a more environmentally friendly machine,
 Also, read speed of especially USB's are -although slower than HD's- still pretty high and less than 650 mb needs to be read
 anyhow and saved to RAM. So, speed increases (compared to HD's) is -even at this phase-, negligable, and after the save to RAM,
 everything is read from RAM, so no speed gains can be had there neither.
+
+A script would be added in /etc/local.d/ that will be started at bootup (in all boot setups). This script would do an execute
+command to start a script in /bootscripts with several commands (including a "setxkbmap" command that has priority over the default keymap
+configuration), located on a USB stick (so on one of the USB ports). The advantage of this being that files on the USB stick can
+be altered, unlike the on the livecd. This way, people that have a different keyboard can still correct this. If no USB stick is
+detected and thus no /bootscripts folder has been found, then the default keymap should be started ("setxkbmap -layout be")
