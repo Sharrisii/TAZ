@@ -58,7 +58,8 @@ anyhow and saved to RAM. So, speed increases (compared to HD's) is -even at this
 everything is read from RAM, so no speed gains can be had there neither.
 
 A script would be added in /etc/local.d/ that will be started at bootup (in all boot setups). This script would do an execute
-command to start a script in /bootscripts with several commands (including a "setxkbmap" command that has priority over the default keymap
-configuration), located on a USB stick (so on one of the USB ports). The advantage of this being that files on the USB stick can
-be altered, unlike the on the livecd. This way, people that have a different keyboard can still correct this. If no USB stick is
-detected and thus no /bootscripts folder has been found, then the default keymap should be started ("setxkbmap -layout be")
+command (./) to start a script in /bootscripts with several commands (including a "setxkbmap" command that has priority over the
+default keymap configuration), located on a USB stick (so on one of the USB ports). The advantage of this being that files on
+the USB stick can be altered, unlike the on the livecd. This way, people that have a different keyboard can still correct this.
+If no USB stick is detected and thus no /bootscripts folder has been found, then the default keymap should be started
+("setxkbmap -layout be")
