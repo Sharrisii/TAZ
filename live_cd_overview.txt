@@ -1,14 +1,11 @@
-Every year: new gentoo ebuilds are downloaded and the tbz2's are updated
+Every year: new gentoo ebuilds are downloaded and tbz2's are created, and from this a new livecd/usb iso is made.
 tbz2's are made and then stored at the github live cd project site (ecomputing/TAZ);
-4 folders are placed herein:
-* x86_tbz2's
-* x86_64_tbz2's
+2 folders are placed herein:
 * x86 bootable archives for livecd
 * x86_64 bootable archives for livecd
-old tbz2's (of previous years) are placed in subfolders of the x86_tbz2's and x86_64_tbz2's folders
+
 The x86 bootable archives for livecd folder and the x86_64 bootable archives folder will both contain 
 the 8 different bootable archives to be started at boot. The bootable archives will be squashfs archives.
-Every year: a new live cd/USB image (ISO) and different bootable archives are made using the tbz2's
 
 Operating principles of the live cd:
 
@@ -58,8 +55,9 @@ anyhow and saved to RAM. So, speed increases (compared to HD's) is -even at this
 everything is read from RAM, so no speed gains can be had there neither.
 
 A script would be added in /etc/local.d/ that will be started at bootup (in all boot setups). This script would do an execute
-command (./) to start a script in /bootscripts with several commands (including a "setxkbmap" command that has priority over the
-default keymap configuration), located on a USB stick (so on one of the USB ports). The advantage of this being that files on
-the USB stick can be altered, unlike the on the livecd. This way, people that have a different keyboard can still correct this.
+command (./) to start a script in /bootscripts/ located on a USB stick (so on one of the USB ports) with several commands
+(including a "setxkbmap" command that has priority over the default keymap configuration), . The advantage of this being that 
+files on the USB stick can be altered, unlike the on the livecd. This way, people that have a different keyboard can still
+correct this.
 If no USB stick is detected and thus no /bootscripts folder has been found, then the default keymap should be started
 ("setxkbmap -layout be")
