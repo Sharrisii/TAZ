@@ -1,0 +1,9 @@
+The fstab/udev changes include:
+* rather than having drive mountpoints come up with foldernames like /run/tux/...,
+the drives mountpoints have names like /mnt/UUID_name
+
+The package makes that all mountpoint names are given their uuid name standardly.
+the device names (uuid name) could hereby be placed directly under /mnt/ (rather than using a foldername in between (ie /mnt/PATA1), ...
+In slitaz 5, this wasn't the case (folders were made under /run/.../...).
+No detecting of the drive ports is hence needed, which will simplify things to code into fstab. Perhaps that later-on, 
+this can still be integrated, ie by putting the uuid folder under the port folder (so say /mnt/PATA1/uuid-number/)
