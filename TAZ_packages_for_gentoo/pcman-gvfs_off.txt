@@ -1,0 +1,11 @@
+The pcmanfm-noGVFS changes include:
+* removing GVFS from PCManFM
+
+#Turn off GVFS in FileManFM (see http://wiki.lxde.org/en/LXDE:PCManFM_build_and_setup_guide )
+export GIO_USE_VFS="local"
+export GIO_USE_VOLUME_MONITOR="unix"
+
+# Set up PCManFM to handle the desktop's wallpaper (see http://wiki.lxde.org/en/PCManFM , and 
+# http://www.simplehelp.net/2008/12/24/linux-command-line-magic-find-and-replace/)
+mkdir ~/Desktop
+sed -i ‘s/XDG_DESKTOP_DIR="$HOME"/XDG_DESKTOP_DIR="$HOME/Desktop"/’ /.config/user-dirs.dirs
