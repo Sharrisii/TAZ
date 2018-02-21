@@ -56,6 +56,8 @@ grs ? (https://packages.gentoo.org/packages/app-portage/grs)
 
 Packages that are part of the core programs, and found ONLY in SecuriTAZ
 eid-mw (https://packages.gentoo.org/packages/app-crypt/eid-mw)
+ledger-wallet (https://packages.gentoo.org/packages/app-crypt/ledger-wallet)
+ledger-wallet-ethereum (https://packages.gentoo.org/packages/app-crypt/ledger-wallet-ethereum)
 ledger-wallet-ripple (https://packages.gentoo.org/packages/app-crypt/ledger-wallet-ripple)
 palemoon-secimp
 firejail-secimp_settings
