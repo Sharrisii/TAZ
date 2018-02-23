@@ -1,8 +1,8 @@
 #!/bin/bash
 conky -p 90
 
-if [ -f "~/conky_files/conky.conf" ]; then
-  conky -cp ~/conky_files/conky.conf 90
+if [ -f "*/conky_files/.conkyrc1" ]; then
+  conky -cp */conky_files/.conkyrc2 90
 else
-  conky -p 90
+  conky -p /etc/conky.conf 90
 fi 
