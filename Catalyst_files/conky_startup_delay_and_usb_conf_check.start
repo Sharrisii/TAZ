@@ -1,0 +1,11 @@
+#!/bin/bash
+conky -p 90
+
+#! /bin/bash
+# /usr/local/bin/startmyconky
+
+if [ -f "conky_files/conky.conf" ]; then
+  conky -cp conky_files/conky.conf 90
+else
+  conky -p 90
+fi
