@@ -1,11 +1,5 @@
 http://www.calculate-linux.org/main/en/use_flags
 http://www.calculate-linux.org/packages/flags
-https://wiki.gentoo.org/wiki/GCC_optimization
-https://gcc.gnu.org/onlinedocs/gcc/x86-Options.html
-
-Note: the lowest supported class for the x86 version (not x86_64 !) should be SSE-cpu's (Pentium 3, Athlon Xp), so it should
-contain SSE-instructions.
-So use -march i686 , -mtune generic, -mfpmath=sse ?
 
 usr/portage/profiles/use.local.desc
 -->
