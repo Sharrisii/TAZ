@@ -16,8 +16,8 @@ usr/portage/profiles/use.local.desc
 +exif
 +suid?
 +udev?
-+uclibc
-+curl?
++glibc
++curl
 +libressl?
 +upnp?
 +ssl
