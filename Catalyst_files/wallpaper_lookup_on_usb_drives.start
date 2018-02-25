@@ -4,5 +4,5 @@
 # (in practice, only USB sticks should be used). Automounting is available (due to AutoFS), so any connected USB sticks will
 # automatically be searched for the indicated file/folder.
 
-if [ -f "/mnt/*/bootscripts/wallpaper.sh" ]; then
+if [ -f /mnt/*/bootscripts/wallpaper.sh ]; then
   /mnt/*/bootscripts/wallpaper.sh
