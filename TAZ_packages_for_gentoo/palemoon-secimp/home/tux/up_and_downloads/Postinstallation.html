@@ -195,20 +195,20 @@
 <td> 58.6.115.42
 </td><td>
 </td><td> no
-</td><td> <a href="http://www.opennicproject.org/" class="external text" title="http://www.opennicproject.org/" rel="nofollow">OpenNIC</a>
+</td><td> <a href="http://www.opennicproject.org/" title="http://www.opennicproject.org/" rel="nofollow">OpenNIC</a>
 </td><td> Australia
 </td></tr>
 <tr>
 <td> 58.6.115.43
 </td><td>
-</td><td> <span style="font-size:0.9em;">no</span>
+</td><td> no
 </td><td> OpenNIC
 </td><td> Australia
 </td></tr>
 <tr>
 <td> 119.31.230.42
 </td><td>
-</td><td> <span style="font-size:0.9em;">no</span>
+</td><td> no
 </td><td> OpenNIC
 </td><td> Australia
 </td></tr>
@@ -334,7 +334,7 @@
 <tr>
 <td> 156.154.71.22
 </td><td>
-</td><td> <span style="font-size:0.9em;">only malicious</span>
+</td><td> only malicious
 </td><td> Comodo Secure DNS
 </td><td> USA
 </td></tr>
@@ -404,14 +404,14 @@
 <tr>
 <td> 64.102.255.44
 </td><td>
-</td><td>  no
+</td><td> no
 </td><td> Cisco Systems
 </td><td> USA
 </td></tr>
 <tr>
 <td> 85.25.149.144
 </td><td>
-</td><td>  no
+</td><td> no
 </td><td> <a href="http://fdnsserv.de/" title="http://fdnsserv.de/" rel="nofollow">Freie Unzensierte Nameserver</a>
 </td><td> Germany
 </td></tr>
@@ -425,28 +425,28 @@
 <tr>
 <td> 209.59.210.167
 </td><td>
-</td><td> <span style="font-size:0.9em;">no</span>
-</td><td> <a href="http://www.hochstaetter.org/" class="external text" title="http://www.hochstaetter.org/" rel="nofollow">Christoph Hochstätter</a>
+</td><td> no
+</td><td> <a href="http://www.hochstaetter.org/" title="http://www.hochstaetter.org/" rel="nofollow">Christoph Hochstätter</a>
 </td><td> USA
 </td></tr>
 <tr>
 <td> 85.214.117.11
 </td><td>
-</td><td> <span style="font-size:0.9em;">no</span>
+</td><td> no
 </td><td> Christoph Hochstätter
 </td><td> Germany
 </td></tr>
 <tr>
 <td> 83.243.5.253
 </td><td> 2a01:198:16::5253
-</td><td> <span style="font-size:0.9em;">no</span>
+</td><td> no
 </td><td> private
 </td><td> Germany
 </td></tr>
 <tr>
 <td> 88.198.130.211
 </td><td>
-</td><td> <span style="font-size:0.9em;">no</span>
+</td><td> no
 </td><td> private
 </td><td> Germany
 </td></tr>
@@ -488,7 +488,7 @@
 	more difficult/complicated passwords (which combine letters and numbers and require a minimum of a certain amount of
 	characters), the best way to prevent you losing access to your accounts is by using simpler passwords (as simple as
 	allowed by the web admins) yet using different ones for every web service and by keeping a text file with all your 
-	passwords and user names per web server (which we call a "passwords and user name reminder list).<br />
+	passwords and user names per web server (which we call a "passwords and user name reminder list").<br />
 	The best place to store such a text file is on an external drive (USB stick or external hard disk), and having this 
 	drive connected only when you really need it (preferably when you don't have an active internet connection). If you
 	really want, you can make this text file password-protected by using a tool such as keepassx.<br />
@@ -512,42 +512,12 @@
 	if you use the password "kft123", you can use "kft456" for example on a different web service.
 </p>
 
-<h2>Launching the sandboxed Pale Moon</h2>
-<p>
-	Firejail has been installed by the script all ready, and the shortcut to Pale Moon in openbox will also have been updated to now launch
-	Pale Moon inside the firejail sandboxing program instead of just launching the regular Pale Moon. However, not all
-	shortcuts might have been changed, so do not use any shortcuts to Pale Moon you're uncertain about.<br />
-	In addition, if you have the habit of launching Pale Moon using the "palemoon" command in "Run program" (often located
-	at your task bar's menu, if you have a task bar), then stop using that command from now on, in favor of "firejail palemoon".
-	The latter command will launch palemoon in the firejail sandboxing program.<br />
-	The same goes for any other programs you'll use in the firejail sandbox btw (launch it with "firejail program_name", 
-	and stop using shortcuts to the programs you're uncertain about). Also, don't forget that you need to launch the profile script first,
-	every time you rebooted (with the command "firejail ./scriptname". The easiest way to do this is by having a script made with this
-	command in it, and launch it automatically every time your system reboots, using 
-	<a href="http://superuser.com/questions/685471/how-can-i-run-a-command-after-boot">crontab</a> or 
-	<a href="http://openbox.org/wiki/Help:Autostart">openbox's autostart</a>.<br /><br />
-	
-	Note that Firejail assumes that Pale Moon is installed at the regular location (namely under /usr/local/)). If it isn't there, 
-	the program won't be run in sandbox-mode.
-</p>
-
-<h2>First run of Pale Moon</h2>
-<p> The first time you start Pale Moon, it may display an installation dialog, with the text "The following items were found in your Extensions folder. 
-    Do you want to install them?" Make sure you select yes, as if you don't the plugins won't be installed, meaning you won't be protected by them.</p>
-
-<h2>Updating Pale Moon, up and downloading, adding plugins and displaying content</h2>
+<h2>Updating Pale Moon, adding plugins and displaying content</h2>
 <p>
 	Pale Moon has been set to no longer automatically update, since updating it might result in compatibility problems 
 	with the plugins added, causing them to no longer function, and thus fail in protecting you. You can change this temporarily in 
 	Pale Moon, if you are sure that updating won't cause compatibility problems with the plugins, for example if new versions 
 	of the plugins have come out, or if the Pale Moon update is known not to cause compatibility problems.<br /><br />
-	
-	For uploading and downloading: when you download a file it will now be saved at /home/tux/up_and_downloads instead
-	of /home/username/downloads. This folder now acts as a corridor for both downloading and uploading files, which means 
-	that you can no longer select a folder anywhere on your hard disk to download files to; instead it needs to be always 
-	downloaded to /home/tux/up_and_downloads. The same goes for uploading: before you upload any file, you need to manually 
-	move or copy the file to /home/tux/up_and_downloads to be able to then upload it. Note that if you don't have the username "tux",
-	you can change it manually in about:preferences in palemoon.<br /><br />
 	
 	Regarding the adding of new plugins: this is still possible, but make sure you temporarily disable the "User agent overrider" 
 	plugin before you visit the Pale Moon extensions page. Else, it won't work (at least not if you chosen a different user 
@@ -571,17 +541,11 @@
 <p>
 	The script has only made Pale Moon safer to use. Any other browsers or other programs you normally use
 	are hence unaffected by the script and will remain equally safe/unsafe as before. It is hence advised that you no longer
-	use any other programs (which connect to the web) besides these, unless you <a href="https://l3net.wordpress.com/projects/firejail/building-custom-profiles/">make custom profiles for them</a> 
-	and launch the scripts automatically.<br />
-	Your Claws and/or Thunderbird e-mail client (assuming you use this) for example has also been unaffected and is as such also equally safe/unsafe as before.
-	However, since you often don't use your e-mail client for very long, the risk (of being hacked) is quite minimal. Note that you can however use the "work off-line" 
-	function in these programs, so that reduces the web connection time of these programs to just the time necessary to sent and receive your e-mails (eliminating the time 
-	needed to write them). Also, as mentioned above, you can write a custom firejail profile for them and run them inside firejail.<br /><br />
-	
+	use any other browsers.<br />
+
 	An alternative to Claws and/or Thunderbird (installed on your hard drive) is to use a portable windows e-mail client like 
 	<a href="http://www.pendriveapps.com/koma-mail/">Koma Mail</a> or <a href="http://www.pendriveapps.com/sylpheed/">Sylpheed (run with Wine)</a> on your external drive
-	you should all ready be using to store your e-mails on. Obviously, the idea isn't to keep this drive connected to your PC all the time, but instead to remove it often,
-	so this would only make sense with a USB stick (and not an external hard disk which requires connecting a power cord, ...).<br /><br />
+	you should all ready be using to store your e-mails on.<br /><br />
 	
 	Regardless of the method and e-mail client used, at least make sure you have an off-line e-mail client and a POP3 e-mail account, to
 	be used alongside any IMAP services (like Google Mail, Hotmail, ...) you might still be using. <br /><br />
@@ -611,7 +575,7 @@
     For developers, it might be useful to know how the Pale Moon browser with modified settings was made (the moddified settings contains settings also stored in the config files -like all.js, prefs.js, palemoon.js, vendor.js, ... 
     The settings were automatically changed by a script placed in /usr/local/palemoon/defaults/pref/<br />
     This method allows use of newer versions of Pale Moon as well (in which case, just replace the Pale Moon folder with the newer Pale Moon version and move over the settings file). 
-	Note that just uncompressing the omni.ja file to be able to edit the js files directly could have also been done but not have allowed using updated Pale Moon versions, and would also have been a hassle. This, as you'd then
+    Note that just uncompressing the omni.ja file to be able to edit the js files directly could have also been done but not have allowed using updated Pale Moon versions, and would also have been a hassle. This, as you'd then
     needed to use a de-optimizer tool (ActivePython and optimizejars.py), and repack the omni.ja file, re-optimize the file, ... See <a href="https://developer.mozilla.org/en-US/docs/Mozilla/About_omni.ja_%28formerly_omni.jar%29">here</a> 
     and <a href="https://www.raymond.cc/blog/edit-files-inside-firefox-4-omni-jar-to-auto-save-password/">here</a>. Even if I were to have succeeded in this, it would then also have been a hassle to find all 
     the settings in the .js files, and with every new palemoon version, one needs to re-update the palemoon version anyway, since the .js files could be changed since the latest palemoon version 
