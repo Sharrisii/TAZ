@@ -1,0 +1,6 @@
+this package should
+* change the boot screen so it allows to select any one of 8 different options
+* these 8 different options will activate one or several compressed archives
+* after selecting and entering on one of the options, the connected archive(s) is/are then copied to RAM and booted
+* archives are not included in this package but can be created by the user and placed in a particular folder, which the boot screen will then use.
+* the text shown at the boot screen per archive can be modified by the user
