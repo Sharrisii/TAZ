@@ -7,5 +7,5 @@ The security improvements this package provide include:
 - noscript 2.6.9.39 (https://addons.palemoon.org/addon/noscript/ )
 - ublock-origin 1.14.25rc1 (https://github.com/gorhill/uBlock/releases)
 - user agent overrider 0.2.4 (https://addons.mozilla.org/en-US/firefox/addon/user-agent-overrider/versions/)
-* adding of a postinstallation_palemoon.html to your /home/tux/up_and_downloads folder and setting the start page of palemoon to
+* adding of a Postinstallation.html to your /downloads/ folder and setting the start page of palemoon to
 that html page
