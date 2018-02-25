@@ -4,7 +4,5 @@
 # (in practice, only USB sticks should be used). Automounting is available (due to AutoFS), so any connected USB sticks will
 # automatically be searched for the indicated file/folder.
 
-sleep 10
-
 if [ -f /mnt/*/bootscripts/screenresolution.sh ]; then
   ./mnt/*/bootscripts/screenresolution.sh
