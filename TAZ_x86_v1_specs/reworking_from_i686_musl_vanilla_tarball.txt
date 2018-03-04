@@ -1,7 +1,0 @@
-Although it would be possible to make the distro by going through stage 1 to stage 3, it seems easier to just use the 
-stage3-i686-musl-vanilla-20180204.tar.bz2 which is available at http://distfiles.gentoo.org/experimental/x86/musl/
-and rework it by chrooting into it and removing and adding files as needed.
-
-Here's the approach:
-
-remove systemd ? (seems to be partly still present, see contents file)
