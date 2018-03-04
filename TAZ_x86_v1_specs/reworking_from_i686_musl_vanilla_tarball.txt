@@ -3,3 +3,5 @@ stage3-i686-musl-vanilla-20180204.tar.bz2 which is available at http://distfiles
 and rework it by chrooting into it and removing and adding files as needed.
 
 Here's the approach:
+
+remove systemd ? (seems to be partly still present, see contents file)
