@@ -46,6 +46,7 @@ autofs (https://packages.gentoo.org/packages/net-fs/autofs )
 net-p2p/transmission (https://packages.gentoo.org/packages/net-p2p/transmission)
 app-admin/conky (https://packages.gentoo.org/packages/app-admin/conky)
 feh (https://packages.gentoo.org/packages/media-gfx/feh)
+media-sound/alsaplayer (https://packages.gentoo.org/packages/media-sound/alsaplayer)
 palemoon (https://github.com/ecocomputing/TAZ/tree/master/www-client/palemoon)
 multiple_archives_at_boot (https://github.com/ecocomputing/gentoo-overlay/multiple_archives_at_boot)
 feh-screensaver (https://github.com/ecocomputing/gentoo-overlay/feh-screensaver)
@@ -77,12 +78,9 @@ Boot setup 5 add-on programs:
 media-gfx/gimp (https://packages.gentoo.org/packages/media-gfx/gimp)
 
 Boot setup 6 add-on programs:
-media-sound/alsaplayer (https://packages.gentoo.org/packages/media-sound/alsaplayer)
-
-Boot setup 7 add-on programs:
 media-video/mpv (https://packages.gentoo.org/packages/media-video/mpv)
 
-Boot setup 8 add-on programs:
+Boot setup 7 add-on programs:
 mail-client/claws-mail (https://packages.gentoo.org/packages/mail-client/claws-mail)
 
 Note that besides these packages, the system will require a lot more packages (dependencies), but these should be found and
