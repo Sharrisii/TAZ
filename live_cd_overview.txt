@@ -2,7 +2,7 @@ Every year: new gentoo ebuilds are downloaded and tbz2's are created, and from t
 tbz2's are made and then stored at the github live cd project site (ecomputing/TAZ);
 
 The x86 bootable archives for livecd folder and the x86_64 bootable archives folder will both contain 
-the 8 different bootable archives to be started at boot. The bootable archives will be squashfs archives.
+the 7 different bootable archives to be started at boot. The bootable archives will be squashfs archives.
 
 Operating principles of the live cd:
 
@@ -12,9 +12,8 @@ Boot setup 2: core programs + system-config-printer + abiword + gnumeric
 Boot setup 3: core programs + impressive
 Boot setup 4: core programs + inkscape
 Boot setup 5: core programs + GIMP
-Boot setup 6: core programs + alsaplayer
-Boot setup 7: core programs + mpv
-Boot setup 8: core programs + Claws mail
+Boot setup 6: core programs + mpv
+Boot setup 7: core programs + Claws mail
 this technique is similar to http://doc.slitaz.org/en:guides:manyinone
 after selecting one of these options, it will copy all data of this setup option (core programs= 1 compressed file, additional
 programs = 1 additional compressed file) to RAM (tmpfs) , and then boot this setup. 
@@ -31,8 +30,8 @@ Any important data generated (i.e. text documents, spreadsheets, powerpoint pres
 
 A usb stick could potentially also be used to store additional packages (ie drivers for certain hardware like graphics cards -if
 he wants better support than the standard x vesa-, printers, scanners, modems, ...) and settings. Any programs that require the
-presence of special drivers (i.e. Blender, ...) could also be added. This could be done by having a
-9th boot setup added to the livecd/liveusb which tells the system to include any squashfs archives placed on a usb stick in one
+presence of special drivers (i.e. Blender, ...) could also be added. This could be done by having an
+8th boot setup added to the livecd/liveusb which tells the system to include any squashfs archives placed on a usb stick in one
 of the free usb ports. No such boot setup will be present in the standard livecd so the user will need to add this manually (and
 make a new livecd or liveusb) and will also need to add the required squashfs archives on a usb stick.
 An alternative to this is -in case you have MS Windows (XP, 2000, ...) installed to a harddisk- to use MS Windows for those
@@ -57,4 +56,4 @@ command (./) to start a script in /bootscripts/ located on a USB stick (so on on
 files on the USB stick can be altered, unlike the on the livecd. This way, people that have a different keyboard can still
 correct this.
 If no USB stick is detected and thus no /bootscripts folder has been found, then the default keymap should be started
-("setxkbmap -layout be")
+("setxkbmap -layout be-latin1")
