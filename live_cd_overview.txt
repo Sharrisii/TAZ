@@ -55,5 +55,4 @@ command (./) to start a script in /bootscripts/ located on a USB stick (so on on
 (including a "setxkbmap" command that has priority over the default keymap configuration), . The advantage of this being that 
 files on the USB stick can be altered, unlike the on the livecd. This way, people that have a different keyboard can still
 correct this.
-If no USB stick is detected and thus no /bootscripts folder has been found, then the default keymap should be started
-("setxkbmap -layout be-latin1")
+If no USB stick is detected and thus no /bootscripts folder has been found, then the default keymap should be started (azerty)
