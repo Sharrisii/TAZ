@@ -16,6 +16,8 @@ IUSE="-official-branding -system-sqlite -system-cairo -system-pixman -system-spe
 -dbus -necko-wifi -gtk3 -webrtc -pulseaudio -speech
 +gtk2 +ffmpeg +alsa +printing +webm +wave spell +optimize shared-js jemalloc
 
+ac_add_options --enable-optimize
+
 EGIT_REPO_URI="https://github.com/MoonchildProductions/Pale-Moon.git"
 GIT_TAG="${PV}_Release"
 
