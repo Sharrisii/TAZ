@@ -4,6 +4,7 @@ https://gcc.gnu.org/onlinedocs/gcc/x86-Options.html
 -The lowest supported class for the x86 version (not x86_64 !) should be SSE-cpu's (Pentium 3, Athlon Xp), so it should
 contain SSE-instructions.
 So use -march i686 , -mtune generic, -mfpmath=sse -mmmx -msse ?
+-O2 ?
 also include 
 -fomit-frame-pointer -pipe
 -fno-unwind-tables -fno-asynchronous-unwind-tables
