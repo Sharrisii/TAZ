@@ -1,0 +1,3 @@
+#Turn off GVFS in FileManFM (see http://wiki.lxde.org/en/LXDE:PCManFM_build_and_setup_guide )
+export GIO_USE_VFS="local"
+export GIO_USE_VOLUME_MONITOR="unix"
