@@ -1,2 +1,10 @@
-This file will 
-bash path/to/script/screensaver.sh time
+#!/bin/bash
+# Place this file in /etc/local.d (see https://wiki.gentoo.org/wiki//etc/local.d )
+# This file tells the system to look for (and execute) the feh-screensaver.sh file in the folder /bootscripts/ on any USB device
+# (in practice, only USB sticks should be used). Automounting is available (due to AutoFS), so any connected USB sticks will
+# automatically be searched for the indicated file/folder. The script will start after 120 seconds of inactivity. 
+
+sleep 20
+
+if [ -f /mnt/*/bootscripts/feh-screensaver.sh ]; then
+/mnt/*/bootscripts/feh-screensaver.sh 120
