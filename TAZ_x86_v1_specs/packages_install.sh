@@ -45,16 +45,14 @@ net-fs/nfs-utils
 media-sound/mps-youtube
 app-cdr/xfburn
 net-fs/autofs
-net-p2p/transmission
 app-admin/conky
 media-gfx/feh
+x11-misc/xprintidle
 media-sound/alsaplayer
 
 # www-client/palemoon
 # pypar2
 # multiple_archives_at_boot
-# feh-screensaver
-# openbox-crunchbang_style 
 
 # Packages that are part of the core programs, and found ONLY in SecuriTAZ
 # eid-mw (https://packages.gentoo.org/packages/app-crypt/eid-mw)
@@ -62,8 +60,6 @@ media-sound/alsaplayer
 # ledger-wallet-ethereum (https://packages.gentoo.org/packages/app-crypt/ledger-wallet-ethereum)
 # ledger-wallet-ripple (https://packages.gentoo.org/packages/app-crypt/ledger-wallet-ripple)
 # palemoon-secimp
-# firejail-secimp_settings
-# gajim-OTR
 
 # Boot setup 2 add-on programs:
 # app-admin/system-config-printer
