@@ -62,7 +62,7 @@ media-sound/alsaplayer
 # palemoon-secimp
 
 # Boot setup 2 add-on programs:
-# app-admin/system-config-printer
+# net-print/cups
 # app-office/abiword
 # app-office/gnumeric
 
