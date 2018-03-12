@@ -60,7 +60,7 @@ ledger-wallet-ripple (https://packages.gentoo.org/packages/app-crypt/ledger-wall
 palemoon-secimp
 
 Boot setup 2 add-on programs:
-app-admin/system-config-printer (https://packages.gentoo.org/packages/app-admin/system-config-printer )
+net-print/cups (https://packages.gentoo.org/packages/net-print/cups)
 app-office/abiword (https://packages.gentoo.org/packages/app-office/abiword)
 app-office/gnumeric (https://packages.gentoo.org/packages/app-office/gnumeric)
 
