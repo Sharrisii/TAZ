@@ -1,7 +1,6 @@
 Every year: new gentoo ebuilds are downloaded and tbz2's are created, and from this a new livecd/usb iso is made.
-tbz2's are made and then stored at the github live cd project site (ecomputing/TAZ);
 
-The x86 bootable archives for livecd folder and the x86_64 bootable archives folder will both contain 
+The x86 bootable archives for livecd folder and the amd64 bootable archives folder will both contain 
 the 7 different bootable archives to be started at boot. The bootable archives will be squashfs archives.
 
 Operating principles of the live cd:
