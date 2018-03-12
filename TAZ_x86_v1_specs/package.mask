@@ -1,0 +1,5 @@
+# this is a mask for portage, see https://wiki.gentoo.org/wiki/Gentoo_Without_systemd
+# put this is in the portage confdir directory ( https://wiki.gentoo.org/wiki/Project:Catalyst/FAQ )
+
+sys-apps/systemd
+sys-fs/udev
