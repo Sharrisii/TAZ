@@ -62,4 +62,4 @@ mail-client/claws-mail +pgp +smime +spam-report +spamassassin
 app-admin/conky +rss +wifi
 net-fs/nfs-utils +nfsv4 +nfsv41
 net-voip/linphone +video
-net-print/cups +python +usb +32
+net-print/cups +python +usb
