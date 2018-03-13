@@ -49,7 +49,6 @@ app-admin/conky
 media-gfx/feh
 x11-misc/xprintidle
 media-sound/alsaplayer
-
 # www-client/palemoon
 # pypar2
 # multiple_archives_at_boot
@@ -59,7 +58,6 @@ media-sound/alsaplayer
 # ledger-wallet (https://packages.gentoo.org/packages/app-crypt/ledger-wallet)
 # ledger-wallet-ethereum (https://packages.gentoo.org/packages/app-crypt/ledger-wallet-ethereum)
 # ledger-wallet-ripple (https://packages.gentoo.org/packages/app-crypt/ledger-wallet-ripple)
-# palemoon-secimp
 
 # Boot setup 2 add-on programs:
 # net-print/cups
