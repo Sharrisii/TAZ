@@ -49,7 +49,6 @@ x11-misc/xprintidle (https://packages.gentoo.org/packages/x11-misc/xprintidle)
 media-sound/alsaplayer (https://packages.gentoo.org/packages/media-sound/alsaplayer)
 palemoon (https://github.com/ecocomputing/TAZ/tree/master/www-client/palemoon)
 uclibc-ng (https://packages.gentoo.org/packages/sys-libs/uclibc-ng)
-multiple_archives_at_boot (https://github.com/ecocomputing/gentoo-overlay/multiple_archives_at_boot)
 grs ? (https://packages.gentoo.org/packages/app-portage/grs)
 
 Packages that are part of the core programs, and found ONLY in SecuriTAZ
