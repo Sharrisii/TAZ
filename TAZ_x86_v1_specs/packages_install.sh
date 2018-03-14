@@ -51,7 +51,6 @@ x11-misc/xprintidle
 media-sound/alsaplayer
 # www-client/palemoon
 # pypar2
-# multiple_archives_at_boot
 
 # Packages that are part of the core programs, and found ONLY in SecuriTAZ
 # eid-mw (https://packages.gentoo.org/packages/app-crypt/eid-mw)
