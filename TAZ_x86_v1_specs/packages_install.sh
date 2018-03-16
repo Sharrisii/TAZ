@@ -7,7 +7,7 @@
 emerge
 app-portage/grs ?
 sys-apps/openrc
-sys-libs/uclibc-ng
+sys-libs/musl
 x11-base/xorg-server
 x11-misc/slim
 x11-drivers/xf86-video-vesa
