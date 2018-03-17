@@ -50,7 +50,7 @@ media-gfx/feh
 x11-misc/xprintidle
 media-sound/alsaplayer
 www-client/palemoon
-pypar2"
+app-crypt/pypar2"
 
 TAZ_packagelist_bootsetup2to7 ="
 net-print/cups
