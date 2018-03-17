@@ -5,7 +5,8 @@
 # and TAZ_general_compiler_flags.txt )
 
 # Define variable
-TAZ_packagelist_core = "app-portage/grs ?
+TAZ_packagelist_core = "
+app-portage/grs ?
 sys-apps/openrc
 sys-libs/musl
 x11-base/xorg-server
@@ -50,7 +51,8 @@ media-gfx/feh
 x11-misc/xprintidle
 media-sound/alsaplayer
 www-client/palemoon
-app-crypt/pypar2"
+app-crypt/pypar2
+"
 
 TAZ_packagelist_bootsetup2to7 ="
 net-print/cups
