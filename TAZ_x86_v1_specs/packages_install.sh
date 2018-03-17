@@ -4,8 +4,8 @@
 # build everything using a make.conf (which includes the flags specified in TAZ_general_CPU_flags.txt, 
 # and TAZ_general_compiler_flags.txt )
 
-emerge
-app-portage/grs ?
+# Define variable
+TAZ_packagelist_core = "app-portage/grs ?
 sys-apps/openrc
 sys-libs/musl
 x11-base/xorg-server
@@ -49,31 +49,26 @@ app-admin/conky
 media-gfx/feh
 x11-misc/xprintidle
 media-sound/alsaplayer
-# www-client/palemoon
-# pypar2
+www-client/palemoon
+pypar2"
 
-# Packages that are part of the core programs, and found ONLY in SecuriTAZ
-# eid-mw (https://packages.gentoo.org/packages/app-crypt/eid-mw)
-# ledger-wallet (https://packages.gentoo.org/packages/app-crypt/ledger-wallet)
-# ledger-wallet-ethereum (https://packages.gentoo.org/packages/app-crypt/ledger-wallet-ethereum)
-# ledger-wallet-ripple (https://packages.gentoo.org/packages/app-crypt/ledger-wallet-ripple)
+TAZ_packagelist_bootsetup2to7 ="
+net-print/cups
+app-office/abiword
+app-office/gnumeric
+app-office/impressive
+media-gfx/inkscape
+media-gfx/gimp
+media-video/mpv
+mail-client/claws-mail
+"
 
-# Boot setup 2 add-on programs:
-# net-print/cups
-# app-office/abiword
-# app-office/gnumeric
+SecuriTAZ_packagelist ="
+TAZ_packagelist_core +
+app-crypt/eid-mw 
+app-crypt/ledger-wallet
+app-crypt/ledger-wallet-ethereum
+app-crypt/ledger-wallet-ripple
+"
 
-# Boot setup 3 add-on programs:
-# app-office/impressive
-
-# Boot setup 4 add-on programs:
-# media-gfx/inkscape
-
-# Boot setup 5 add-on programs:
-# media-gfx/gimp
-
-# Boot setup 6 add-on programs:
-# media-video/mpv
-
-# Boot setup 7 add-on programs:
-# mail-client/claws-mail
+emerge $TAZ_packagelist
