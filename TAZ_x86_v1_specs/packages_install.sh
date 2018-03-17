@@ -71,4 +71,4 @@ app-crypt/ledger-wallet-ethereum
 app-crypt/ledger-wallet-ripple
 "
 
-emerge $TAZ_packagelist
+emerge $TAZ_packagelist_core
