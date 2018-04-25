@@ -11,4 +11,4 @@ iso to retrieve the settings, scripts, ... found in the "TAZ_optional_usb_stick"
 USB-stick and then inserted to the PC.
 For x86, the lowest supported class of cpu's are the SSE-cpu's, so Pentium 3 / Athlon Xp.
 
-Extra packages for gentoo (that change TAZ into SecuriTAZ) can be found at https://github.com/ecocomputing/gentoo-overlay
+Extra packages for gentoo (that change TAZ into SecuriTAZ) include eid-mw
