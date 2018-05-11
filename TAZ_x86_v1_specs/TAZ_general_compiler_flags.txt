@@ -57,7 +57,7 @@ sys-block/gparted +btrfs +dmraid +f2fs +fat +hfs +jfs +mdadm +ntfs +reiser4 +rei
 media-sound/alsaplayer +id3tag
 net-im/gajim +jingle
 media-video/mpv +alsa +vaapi
-mail-client/claws-mail +pgp +smime +spam-report +spamassassin
+mail-client/claws-mail +clamav +pgp +smime +spam-report +spamassassin
 app-admin/conky +rss +wifi
 net-fs/nfs-utils +nfsv4 +nfsv41
 net-voip/linphone +video
