@@ -52,6 +52,7 @@ x11-misc/xprintidle
 media-sound/alsaplayer
 www-client/palemoon
 app-crypt/pypar2
+dev-python/pyopenssl
 "
 
 TAZ_packagelist_bootsetup2to7 ="
