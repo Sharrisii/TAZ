@@ -36,7 +36,7 @@ This is all possible by having the 8th boot setup on the livecd/liveusb activate
 squashfs archives placed on the "bootsetup8" folder on the usb stick. Users can make their own squashfs archive in the
 bootsetup8 folder by gathering the installation files via the package manager (or via github, ...) and installing it to the
 bootsetup8 folder, and then compressing the files into a squashfs archive. The squashfs archive needs to be named 
-"squashfsarchive8" so the script can find and launch it.
+"archive8.squashfs" so the script can find and launch it.
 An alternative to this is -in case you have MS Windows (XP, 2000, ...) installed to a harddisk- to use MS Windows for those
 tasks you can't do in TAZ (due to lack of drivers, ...).
 
