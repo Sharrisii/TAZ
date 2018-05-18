@@ -73,7 +73,7 @@ Boot setup 7 add-on programs:
 mail-client/claws-mail (https://packages.gentoo.org/packages/mail-client/claws-mail)
 
 Boot setup 8 add-on programs:
-own squashfs archive needs to be made and place on the TAZ_optional_USB_stick/bootsetup8 folder.
+own "archive8.squashfs" archive needs to be made and place on the TAZ_optional_USB_stick/bootsetup8 folder.
 An example of a packages bundle (SecuriTAZ bundle) that could be useful are:
 eid-mw (https://packages.gentoo.org/packages/app-crypt/eid-mw)
 ledger-wallet (https://packages.gentoo.org/packages/app-crypt/ledger-wallet)
