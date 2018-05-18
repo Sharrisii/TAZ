@@ -52,12 +52,6 @@ www-client/palemoon (https://packages.gentoo.org/packages/www-client/palemoon)
 musl (https://packages.gentoo.org/packages/sys-libs/musl)
 grs ? (https://packages.gentoo.org/packages/app-portage/grs)
 
-Packages that are part of the core programs, and found ONLY in SecuriTAZ
-eid-mw (https://packages.gentoo.org/packages/app-crypt/eid-mw)
-ledger-wallet (https://packages.gentoo.org/packages/app-crypt/ledger-wallet)
-ledger-wallet-ethereum (https://packages.gentoo.org/packages/app-crypt/ledger-wallet-ethereum)
-ledger-wallet-ripple (https://packages.gentoo.org/packages/app-crypt/ledger-wallet-ripple)
-
 Boot setup 2 add-on programs:
 net-print/cups (https://packages.gentoo.org/packages/net-print/cups)
 app-office/abiword (https://packages.gentoo.org/packages/app-office/abiword)
@@ -77,6 +71,14 @@ media-video/mpv (https://packages.gentoo.org/packages/media-video/mpv)
 
 Boot setup 7 add-on programs:
 mail-client/claws-mail (https://packages.gentoo.org/packages/mail-client/claws-mail)
+
+Boot setup 8 add-on programs:
+own squashfs archive needs to be made and place on the TAZ_optional_USB_stick/bootsetup8 folder.
+An example of a packages bundle (SecuriTAZ bundle) that could be useful are:
+eid-mw (https://packages.gentoo.org/packages/app-crypt/eid-mw)
+ledger-wallet (https://packages.gentoo.org/packages/app-crypt/ledger-wallet)
+ledger-wallet-ethereum (https://packages.gentoo.org/packages/app-crypt/ledger-wallet-ethereum)
+ledger-wallet-ripple (https://packages.gentoo.org/packages/app-crypt/ledger-wallet-ripple)
 
 Note that besides these packages, the system will require a lot more packages (dependencies), but these should be found and
 added automatically by portage.
