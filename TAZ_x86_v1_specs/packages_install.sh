@@ -66,7 +66,7 @@ media-video/mpv
 mail-client/claws-mail
 "
 
-archive8.squashfs_(SecuriTAZ bundle)_packagelist ="
+archive8.squashfs_(SecuriTAZ_bundle)_packagelist ="
 TAZ_packagelist_core +
 app-crypt/eid-mw 
 app-crypt/ledger-wallet
