@@ -1,4 +1,4 @@
-Every year: new gentoo ebuilds are downloaded and tbz2's are created, and from this a new livecd/usb iso is made.
+Every year: new gentoo ebuilds are downloaded, and from this a new livecd/usb iso is made.
 
 The x86 bootable archives for livecd folder and the amd64 bootable archives folder will both contain 
 the 7 different bootable archives to be started at boot. The bootable archives will be squashfs archives.
@@ -13,6 +13,7 @@ Boot setup 4: core programs + inkscape
 Boot setup 5: core programs + GIMP
 Boot setup 6: core programs + mpv
 Boot setup 7: core programs + Claws mail
+Boot setup 8: core programs + programs installed on TAZ_optional_usb_stick (bootsetup8 folder)
 this technique is similar to http://doc.slitaz.org/en:guides:manyinone
 after selecting one of these options, it will copy all data of this setup option (core programs= 1 compressed file, additional
 programs = 1 additional compressed file) to RAM (tmpfs) , and then boot this setup. 
@@ -27,14 +28,17 @@ used). This login data will need to be entered every time the operating system i
 browser will similarly lose all its history data with every restart, but during use, it will keep history data.
 Any important data generated (i.e. text documents, spreadsheets, powerpoint presentations, ...) can be saved to a usb stick.
 
-A usb stick could potentially also be used to store additional packages (ie drivers for certain hardware like graphics cards -if
-he wants better support than the standard x vesa-, printers, scanners, modems, ...) and settings. Any programs that require the
-presence of special drivers (i.e. Blender, ...) could also be added. This could be done by having an
-8th boot setup added to the livecd/liveusb which tells the system to include any squashfs archives placed on a usb stick in one
-of the free usb ports. No such boot setup will be present in the standard livecd so the user will need to add this manually (and
-make a new livecd or liveusb) and will also need to add the required squashfs archives on a usb stick.
+A usb stick is also used to store additional packages (ie programs, drivers for certain hardware like graphics cards -if
+he wants better support than the standard x vesa-, printers, scanners, modems, ...) and settings. Programs that require the
+presence of special drivers (i.e. Blender, ...) are also found on the usb stick. Some users may also want to add programs for
+administrative things, i.e. eid-mw, ledger-wallet, ledger-wallet-ethereum + ledger-wallet-ripple.
+This is all possible by having the 8th boot setup on the livecd/liveusb activate a script which tells the system to include any 
+squashfs archives placed on the "bootsetup8" folder on the usb stick. Users can make their own squashfs archive in the
+bootsetup8 folder by gathering the installation files via the package manager (or via github, ...) and installing it to the
+bootsetup8 folder, and then compressing the files into a squashfs archive. The squashfs archive needs to be named 
+"squashfsarchive8" so the script can find and launch it.
 An alternative to this is -in case you have MS Windows (XP, 2000, ...) installed to a harddisk- to use MS Windows for those
-tasks you can't do in TAZ (due to lack of drivers).
+tasks you can't do in TAZ (due to lack of drivers, ...).
 
 Notes:
 
