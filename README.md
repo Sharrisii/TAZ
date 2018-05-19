@@ -10,5 +10,3 @@ The TAZ livecd/liveusb iso's also include the files found in the /files_included
 iso to retrieve the settings, scripts, ... found in the "TAZ_optional_usb_stick"-repo which are to be downloaded and placed on a
 USB-stick and then inserted to the PC.
 For x86, the lowest supported class of cpu's are the SSE-cpu's, so Pentium 3 / Athlon Xp.
-
-Extra packages for gentoo (that change TAZ into SecuriTAZ) include eid-mw
