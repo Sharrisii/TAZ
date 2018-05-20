@@ -51,7 +51,7 @@ media-gfx/feh
 x11-misc/xprintidle
 media-sound/alsaplayer
 www-client/palemoon
-app-crypt/pypar2
+app-arch/par2cmdline
 dev-python/pyopenssl
 "
 
