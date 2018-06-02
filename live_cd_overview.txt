@@ -1,8 +1,9 @@
 Every year: new gentoo ebuilds are downloaded, and from this a new livecd/usb iso is made.
-You can burn the iso using TAZ (assuming you already have that and are not currently still working on windows or another 
-linux distro). The TAZ program to use for this is xfburn. This same program may also be available on another linux distro
-(in case you're currently working with that instead). If using windows, ImgBurn can be used instead.
-You can also place the iso on a usb stick by means of a program such as:
+You can burn the iso using TAZ on a cd-r (assuming you already have that and are not currently still working on windows 
+or another linux distro). The TAZ program to use for this is xfburn. 
+This same program may also be available on another linux distro (in case you're currently working with that instead). 
+If using windows, ImgBurn can be used instead.
+You can also place the iso on a usb stick instead of on a cd-r by means of a program such as:
 * Universal USB installer (http://www.pendrivelinux.com/universal-usb-installer-easy-as-1-2-3/)
 * Linux Live USb creator (http://www.linuxliveusb.com/)
 * UNetbootin (https://unetbootin.github.io/)
