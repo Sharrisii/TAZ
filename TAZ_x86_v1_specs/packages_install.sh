@@ -43,6 +43,8 @@ x11-misc/gmrun
 app-antivirus/clamav
 dev-vcs/git
 net-fs/nfs-utils
+net-misc/dhcpcd
+net-misc/dhcpcd-ui
 media-sound/mps-youtube
 app-cdr/xfburn
 net-fs/autofs
