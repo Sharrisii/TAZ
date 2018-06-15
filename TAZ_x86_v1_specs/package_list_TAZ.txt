@@ -83,6 +83,7 @@ Boot setup 8 add-on programs:
 own "archive8.squashfs" archive needs to be made and place on the TAZ_optional_USB_stick/bootsetup8 folder.
 An example of a packages bundle (SecuriTAZ bundle) that could be useful are:
 eid-mw (https://packages.gentoo.org/packages/app-crypt/eid-mw)
+acsccid linux driver (for e-id readers, such as the Zetes ACR38 ) 
 ledger-wallet (https://packages.gentoo.org/packages/app-crypt/ledger-wallet)
 ledger-wallet-ethereum (https://packages.gentoo.org/packages/app-crypt/ledger-wallet-ethereum)
 ledger-wallet-ripple (https://packages.gentoo.org/packages/app-crypt/ledger-wallet-ripple)
