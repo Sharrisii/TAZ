@@ -45,6 +45,11 @@ dev-vcs/git
 net-fs/nfs-utils
 net-misc/dhcpcd
 net-misc/dhcpcd-ui
+net-misc/wicd
+net-wireless/wpa_supplicant
+net-wireless/wireless-tools
+sys-apps/net-tools
+net-wireless/bluez
 media-sound/mps-youtube
 app-cdr/xfburn
 net-fs/autofs
