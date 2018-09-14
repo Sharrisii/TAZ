@@ -76,9 +76,7 @@ mail-client/claws-mail
 archive8.squashfs_(SecuriTAZ_bundle)_packagelist ="
 TAZ_packagelist_core +
 app-crypt/eid-mw 
-app-crypt/ledger-wallet
-app-crypt/ledger-wallet-ethereum
-app-crypt/ledger-wallet-ripple
+app-crypt/ledger-live-desktop
 "
 
 emerge $TAZ_packagelist_core
