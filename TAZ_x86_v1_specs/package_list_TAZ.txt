@@ -89,9 +89,7 @@ own "archive8.squashfs" archive needs to be made and place on the TAZ_optional_U
 An example of a packages bundle (SecuriTAZ bundle) that could be useful are:
 eid-mw (https://packages.gentoo.org/packages/app-crypt/eid-mw)
 acsccid linux driver (for e-id readers, such as the Advanced Card Systems (ACS) / Zetes ACR38 ) 
-ledger-wallet (https://packages.gentoo.org/packages/app-crypt/ledger-wallet)
-ledger-wallet-ethereum (https://packages.gentoo.org/packages/app-crypt/ledger-wallet-ethereum)
-ledger-wallet-ripple (https://packages.gentoo.org/packages/app-crypt/ledger-wallet-ripple)
+ledger-live-desktop (https://github.com/LedgerHQ/ledger-live-desktop)
 
 Note that besides these packages, the system will require a lot more packages (dependencies), but these should be found and
 added automatically by portage.
