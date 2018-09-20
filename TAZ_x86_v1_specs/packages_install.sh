@@ -10,7 +10,6 @@ app-portage/grs ?
 sys-apps/openrc
 sys-libs/musl
 x11-base/xorg-server
-x11-misc/slim
 x11-drivers/xf86-video-vesa
 sys-apps/busybox
 sys-apps/portage
