@@ -36,16 +36,17 @@ customized programs are placed in archive8.squashfs
 this technique is similar to http://doc.slitaz.org/en:guides:manyinone
 after selecting one of these options, it will copy all data of this setup option (core programs= 1 compressed file, additional
 programs = 1 additional compressed file) to RAM (tmpfs) , and then boot this setup. 
-The benefit of this approach is that the amount of RAM needed for the PC can remain relatively low, and the operating system
-will also be much faster
+The benefit of this approach is that the amount of RAM needed for the PC can remain relatively low (compared to copying 
+everything to RAM, without using archives), and the operating system will also be much faster
 
 Read/write abilities:
-Since cd-r's are read-only, the operating system never changes (between boots) and can't become insecure.
-Upon boot, the data is written to ram (--> it will copy the archives to tmpfs so it runs from RAM), hence allowing the
-introduction of settings (for example to add log-in data to gajim, data for printer detection, ... so these can effectively be
-used). This login data will need to be entered every time the operating system is restarted, as settings are not storable. The
-browser will similarly lose all its history data with every restart, but during use, it will keep history data.
-Any important data generated (i.e. text documents, spreadsheets, powerpoint presentations, ...) can be saved to a usb stick.
+Since cd-r's are read-only, the operating system (core programs) never changes (between boots) and can't become insecure.
+Upon boot, the data is written to ram (--> it will copy the archives needed for the selected boot setup to tmpfs so it runs 
+from RAM), hence allowing the introduction of settings (for example to add log-in data to gajim, data for printer detection, ... 
+so these can effectively be used). This login data will need to be entered every time the operating system is restarted, as 
+settings are not storable. The browser will similarly lose all its history data with every restart, but during use, it will keep 
+history data. Any important data generated (i.e. text documents, spreadsheets, powerpoint presentations, ...) can be saved to a 
+usb stick.
 
 A usb stick is also used to store not only the main boot archives but also additional packages (ie programs, drivers for certain 
 hardware like graphics cards -if he wants better support than the standard x vesa-, printers, scanners, modems, ...) and 
