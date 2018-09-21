@@ -39,6 +39,7 @@ www-plugins/lightspark
 net-im/gajim
 net-voip/linphone
 x11-misc/gmrun
+x11-misc/slim
 app-antivirus/clamav
 dev-vcs/git
 net-fs/nfs-utils
