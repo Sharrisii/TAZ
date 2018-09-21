@@ -60,6 +60,7 @@ x11-drivers/xf86-video-vesa (https://packages.gentoo.org/categories/x11-drivers/
 x11-misc/gmrun (https://packages.gentoo.org/categories/x11-misc/gmrun)
 x11-misc/pcmanfm (https://packages.gentoo.org/categories/x11-misc/pcmanfm)
 x11-misc/xprintidle (https://packages.gentoo.org/categories/x11-misc/xprintidle)
+x11-misc/slim (https://packages.gentoo.org/categories/x11-misc/slim)
 x11-terms/sakura (https://packages.gentoo.org/categories/x11-terms/sakura)
 x11-wm/openbox (https://packages.gentoo.org/categories/x11-misc/pcmanfm)
 
