@@ -14,14 +14,25 @@ the 7 different bootable archives to be started at boot. The bootable archives w
 Operating principles of the live cd:
 
 A boot screen is shown, displaying the 8 different boot options, knowingly:
-Boot setup 1: core programs only
-Boot setup 2: core programs + system-config-printer + abiword + gnumeric
-Boot setup 3: core programs + impressive
-Boot setup 4: core programs + inkscape
-Boot setup 5: core programs + GIMP
-Boot setup 6: core programs + mpv
-Boot setup 7: core programs + Claws mail
-Boot setup 8: core programs + programs installed on TAZ_optional_usb_stick (bootsetup8 folder)
+Boot setup 1: core programs only (cd)
+Boot setup 2: core programs (cd) + system-config-printer + abiword + gnumeric (usb stick)
+Boot setup 3: core programs (cd) + impressive (usb stick)
+Boot setup 4: core programs (cd) + inkscape (usb stick)
+Boot setup 5: core programs (cd) + GIMP (usb stick)
+Boot setup 6: core programs (cd) + mpv (usb stick)
+Boot setup 7: core programs (cd) + Claws mail (usb stick)
+Boot setup 8: core programs (cd) + customized programs (usb stick)
+
+core programs are placed on the cd, and the rest is placed in archives on the usb stick (under the folders bootsetup2to7 
+and bootsetup8): 
+system-config-printer + abiword + gnumeric is placed in archive2.squashfs,
+impressive is placed in archive3.squashfs,
+inkscape is placed in archive4.squashfs,
+GIMP is placed in archive5.squashfs,
+mpv is placed in archive6.squashfs,
+Claws mail is placed in archive7.squashfs,
+customized programs are placed in archive8.squashfs
+
 this technique is similar to http://doc.slitaz.org/en:guides:manyinone
 after selecting one of these options, it will copy all data of this setup option (core programs= 1 compressed file, additional
 programs = 1 additional compressed file) to RAM (tmpfs) , and then boot this setup. 
