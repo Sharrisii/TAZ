@@ -68,6 +68,7 @@ app-office/abiword
 app-office/gnumeric
 app-office/impressive
 media-gfx/inkscape
+media-gfx/sane-backends
 media-gfx/gimp
 media-video/mpv
 mail-client/claws-mail
