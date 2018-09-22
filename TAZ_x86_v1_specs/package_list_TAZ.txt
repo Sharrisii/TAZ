@@ -76,6 +76,7 @@ Boot setup 4 add-on programs:
 media-gfx/inkscape (https://packages.gentoo.org/categories/media-gfx/inkscape)
 
 Boot setup 5 add-on programs:
+media-gfx/sane-backends (https://packages.gentoo.org/categories/media-gfx/sane-backends)
 media-gfx/gimp (https://packages.gentoo.org/categories/media-gfx/gimp)
 
 Boot setup 6 add-on programs:
