@@ -15,10 +15,10 @@ Operating principles of the live cd:
 
 A boot screen is shown, displaying the 8 different boot options, knowingly:
 Boot setup 1: core programs only (cd)
-Boot setup 2: core programs (cd) + system-config-printer + abiword + gnumeric (usb stick)
+Boot setup 2: core programs (cd) + cups + abiword + gnumeric (usb stick)
 Boot setup 3: core programs (cd) + impressive (usb stick)
 Boot setup 4: core programs (cd) + inkscape (usb stick)
-Boot setup 5: core programs (cd) + GIMP (usb stick)
+Boot setup 5: core programs (cd) + SANE + GIMP (usb stick)
 Boot setup 6: core programs (cd) + mpv (usb stick)
 Boot setup 7: core programs (cd) + Claws mail (usb stick)
 Boot setup 8: core programs (cd) + customized programs (usb stick)
