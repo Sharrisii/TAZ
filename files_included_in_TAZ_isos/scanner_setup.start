@@ -8,5 +8,5 @@
 
 sleep 20
 
-if [ -f /mnt/*/bootscripts/scanner_setup.sh ]; && [ -f /net-print/cups ] then
+if [ -f /mnt/*/bootscripts/scanner_setup.sh ]; && [ -f /media-gfx/sane-backends ] then
 /mnt/*/bootscripts/scanner_setup.sh
