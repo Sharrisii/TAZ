@@ -7,6 +7,11 @@ You can also place the iso on a usb stick instead of on a cd-r by means of a pro
 * Universal USB installer (http://www.pendrivelinux.com/universal-usb-installer-easy-as-1-2-3/)
 * Linux Live USb creator (http://www.linuxliveusb.com/)
 * UNetbootin (https://unetbootin.github.io/)
+Please note that while placing the iso (which contains only boot setup 1) on a usb stick is possible, it is not recommended as 
+it is less safe. Reason for this is that the data on a cd-r is unchangable, whereas data on a usb stick it is not.
+Also note that even if you're putting the iso (which contains only boot setup 1) on a usb stick, you still need to use a second  
+usb stick for the TAZ_optional_usb_stick boot setups and data (if you want to be able to boot the other boot setups and use the 
+additional data (scripts, ...) on this at least). 
 
 The x86 bootable archives for livecd folder and the amd64 bootable archives folder will both contain 
 the 7 different bootable archives to be started at boot. The bootable archives will be squashfs archives.
@@ -15,13 +20,13 @@ Operating principles of the live cd:
 
 A boot screen is shown, displaying the 8 different boot options, knowingly:
 Boot setup 1: core programs only (cd)
-Boot setup 2: core programs (cd) + cups + abiword + gnumeric (usb stick)
-Boot setup 3: core programs (cd) + impressive (usb stick)
-Boot setup 4: core programs (cd) + inkscape (usb stick)
-Boot setup 5: core programs (cd) + sane-backends + GIMP (usb stick)
-Boot setup 6: core programs (cd) + mpv (usb stick)
-Boot setup 7: core programs (cd) + Claws mail (usb stick)
-Boot setup 8: core programs (cd) + customized programs (usb stick)
+Boot setup 2: core programs (cd) + cups + abiword + gnumeric (TAZ_optional_usb_stick)
+Boot setup 3: core programs (cd) + impressive (TAZ_optional_usb_stick)
+Boot setup 4: core programs (cd) + inkscape (TAZ_optional_usb_stick)
+Boot setup 5: core programs (cd) + sane-backends + GIMP (TAZ_optional_usb_stick)
+Boot setup 6: core programs (cd) + mpv (TAZ_optional_usb_stick)
+Boot setup 7: core programs (cd) + Claws mail (TAZ_optional_usb_stick)
+Boot setup 8: core programs (cd) + customized programs (TAZ_optional_usb_stick)
 
 core programs are placed on the cd, and the rest is placed in archives on the usb stick (under the folders bootsetup2to7 
 and bootsetup8): 
