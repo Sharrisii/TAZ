@@ -56,6 +56,7 @@ livecd/use:
 livecd/packages: 
     app-admin/conky
     app-admin/hardinfo
+    app-admin/sudo
     app-antivirus/clamav
     app-arch/par2cmdline
     app-arch/xarchiver

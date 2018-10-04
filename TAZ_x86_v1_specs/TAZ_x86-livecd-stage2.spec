@@ -5,6 +5,7 @@ rel_type: default
 profile: default/linux/x86/17.0/musl
 snapshot: taz-test1
 portage_confdir: /etc/catalyst/portage
+livecd/type: generic-livecd
 
 # seed stage is previously built livecd-stage1
 source_subpath: default/livecd-stage1-i686-taz-test1
@@ -16,8 +17,16 @@ source_subpath: default/livecd-stage1-i686-taz-test1
 #   https://github.com/VCTLabs/palemoon-overlay
 portage_overlay: /var/lib/layman
 
-livecd/xsession: lxde
+# customized config files
+livecd/root_overlay: /etc/catalyst/root_overlay
 
+# script for further customizations
+livecd/fsscript: /etc/catalyst/TAZ_postinstall
+
+# rootfs type
+livecd/fstype: squashfs
+
+# username when booted to CD
 livecd/users: taz
 
 # this needs to match the file that is actually provided by version of catalyst in use
