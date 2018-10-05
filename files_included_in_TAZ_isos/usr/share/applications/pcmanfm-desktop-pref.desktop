@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Icon=user-desktop
+Name=Desktop Preferences
+Name[en_GB]=Desktop Preferences
+Comment=Change desktop wallpapers and behavior of desktop manager
+Comment[en_GB]=Change desktop wallpapers and behaviour of desktop manager
+Categories=Settings;GTK;DesktopSettings;X-LXDE-Settings;
+Exec=pcmanfm --desktop-pref
+StartupNotify=true
+Terminal=false
+NotShowIn=GNOME;XFCE;KDE;MATE;

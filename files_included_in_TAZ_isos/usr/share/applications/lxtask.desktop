@@ -1,0 +1,14 @@
+[Desktop Entry]
+Name=Task Manager
+Name[en_GB]=Task Manager
+Comment=Manage running processes
+Comment[en_GB]=Manage running processes
+GenericName=Process manager
+GenericName[en_GB]=Process manager
+Keywords=task;kill;suspend;processor;memory;monitoring;performance;
+Exec=lxtask
+Icon=utilities-system-monitor
+Terminal=false
+StartupNotify=true
+Type=Application
+Categories=GTK;System;Monitor;

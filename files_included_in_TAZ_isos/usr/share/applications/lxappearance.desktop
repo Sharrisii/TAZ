@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Name=Customize Look and Feel
+Name[en_GB]=Customise Look and Feel
+GenericName=Customize Look and Feel
+GenericName[en_GB]=Customise Look and Feel
+Comment=Customizes look and feel of your desktop and applications
+Comment[en_GB]=Customises look and feel of your desktop and applications
+Keywords=windows;preferences;settings;theme;style;appearance;
+Icon=preferences-desktop-theme
+Exec=lxappearance
+NotShowIn=GNOME;KDE;XFCE;MATE;
+StartupNotify=true
+Categories=GTK;Settings;DesktopSettings;X-LXDE-Settings;

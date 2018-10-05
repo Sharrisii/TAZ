@@ -1,0 +1,22 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=The Porthole Portage Frontend
+Name[de]=Die Porthole Portage Oberfläche
+Name[fr]=L'application graphique pour Portage
+Name[ru]=Porthole, графический интерфейс для Portage
+Name[it]=The Porthole l'interfaccia grafica per Portage
+Comment=Use a GTK-based frontend to the Gentoo package management system
+Comment[de]=Benutzen Sie eine GTK-basierende Oberfläche für das Paketmanagement von Gentoo
+Comment[fr]=Une appli graphique GTK pour le système de gestion de packetages de Gentoo
+Comment[ru]=Запустить GTK-интерфейс для пакетной системы Gentoo
+Comment[it]=Un'interfaccia grafica per la gestione dei pacchetti di Gentoo
+Icon=porthole-icon.png
+Exec=porthole
+StartupNotify=true
+Type=Application
+Categories=System;PackageManager;
+GenericName[en_CA]= Porthole
+GenericName= Porthole
+GenericName[it]= Porthole
+
