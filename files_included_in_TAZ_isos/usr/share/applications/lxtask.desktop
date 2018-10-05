@@ -1,10 +1,7 @@
 [Desktop Entry]
-Name=Task Manager
-Name[en_GB]=Task Manager
-Comment=Manage running processes
-Comment[en_GB]=Manage running processes
+Name=LXTask
 GenericName=Process manager
-GenericName[en_GB]=Process manager
+Comment=Manage running processes
 Keywords=task;kill;suspend;processor;memory;monitoring;performance;
 Exec=lxtask
 Icon=utilities-system-monitor
