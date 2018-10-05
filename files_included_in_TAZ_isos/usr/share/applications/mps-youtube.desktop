@@ -1,11 +1,11 @@
 [Desktop Entry]
-Name=mps-youtube
-GenericName=Music Player
-Keywords=Audio;Song;Podcast;Playlist;youtube.com;
-Exec=mpsyt %U
-Terminal=true
-Icon=terminal
+Categories=AudioVideo;
+Exec=sakura -e mpsyt
+GenericName=MPS-youtube
+Name=MPS-youtube
+Name[en_US]=MPS-youtube
+Comment=Youtube player and downloader
+Comment[en_US]=Youtube player and downloader
+Terminal=false
 Type=Application
-Categories=AudioVideo;Audio;Player;
-StartupNotify=true
-NoDisplay=true
+Version=1.0
