@@ -1,0 +1,8 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+NoDisplay=true
+Exec=/mnt/livecd/usr/lib/palemoon/palemoon %u
+Name=New Moon
+Comment=Custom definition for New Moon
