@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=Dhcpcd-gtk
+GenericName=Network Configurator
 Comment=Configure and monitor your network connections
 Exec=dhcpcd-gtk
 Icon=dhcpcd
