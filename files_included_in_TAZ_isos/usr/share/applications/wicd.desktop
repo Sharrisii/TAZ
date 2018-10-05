@@ -1,5 +1,5 @@
 [Desktop Entry]
-Categories=Network;Settings;Utility;X-GNOME-NetworkSettings;
+Categories=Settings;Utility;
 Exec=wicd-gtk --no-tray
 GenericName=Network Manager
 Icon=wicd-gtk
