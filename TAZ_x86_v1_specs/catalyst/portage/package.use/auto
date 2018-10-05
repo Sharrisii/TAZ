@@ -1,0 +1,35 @@
+# required by x11-misc/xdg-utils-1.1.1-r1::gentoo
+# required by net-print/cups-2.2.7::gentoo[X]
+# required by net-print/cups-filters-1.17.9::gentoo
+>=app-text/xmlto-0.0.26-r1 text
+# required by dev-python/pygame-1.9.2_pre20120101-r2::gentoo
+# required by app-office/impressive-0.12.0::gentoo
+# required by app-office/impressive (argument)
+>=media-libs/sdl-image-1.2.12-r2 png
+# required by dev-libs/libindicate-12.10.1-r2::gentoo[gtk]
+# required by mail-client/claws-mail-3.15.0-r2::gentoo[notification,libindicate]
+# required by mail-client/claws-mail (argument)
+>=dev-libs/libdbusmenu-12.10.2-r2 gtk3
+# required by media-gfx/inkscape-0.92.2::gentoo
+# required by media-gfx/inkscape (argument)
+>=app-text/poppler-0.62.0-r1 cairo
+# required by x11-misc/notification-daemon-3.14.1::gentoo
+# required by virtual/notification-daemon-0::gentoo[-gnome,-kde]
+# required by x11-libs/libnotify-0.7.7::gentoo
+# required by mail-client/claws-mail-3.15.0-r2::gentoo[libnotify,notification]
+# required by mail-client/claws-mail (argument)
+>=media-libs/libcanberra-0.30-r5 gtk3
+# required by sys-auth/polkit-0.113-r4::musl[-elogind,-systemd]
+# required by lxde-base/lxsession-0.5.2::gentoo
+# required by lxde-base/lxsession (argument)
+>=sys-auth/consolekit-1.2.0 policykit
+# required by virtual/ffmpeg-9-r2::gentoo[-libav]
+# required by www-client/palemoon-bin-27.9.2::palemoon
+# required by palemoon-bin (argument)
+>=media-video/ffmpeg-3.3.6 x264
+# required by www-client/palemoon-bin-27.9.2::palemoon
+# required by palemoon-bin (argument)
+>=virtual/ffmpeg-9-r2 x264
+# required by sys-kernel/genkernel-3.5.3.3::gentoo
+# required by genkernel (argument)
+>=sys-apps/util-linux-2.30.2-r1 static-libs

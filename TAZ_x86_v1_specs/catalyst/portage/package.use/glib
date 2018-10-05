@@ -1,0 +1,3 @@
+# required by dev-libs/glib-2.52.3::gentoo[test]
+# required by dev-libs/glib (argument)
+>=x11-base/xorg-server-1.19.5-r2 xvfb

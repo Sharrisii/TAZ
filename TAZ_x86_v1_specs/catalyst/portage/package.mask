@@ -1,0 +1,4 @@
+# gcc 7.3 broke palemoon... 
+#   mozalloc.h:256:46: error: 'nothrow_t' in namespace 'std' does not name a type
+# had enough of palemoon build issues for now, so let's go with gcc 6
+>=sys-devel/gcc-7.2.0

@@ -1,0 +1,2 @@
+# minimalistic toolchain just for palemoon
+=sys-devel/gcc-4.9.4 -fortran -openmp

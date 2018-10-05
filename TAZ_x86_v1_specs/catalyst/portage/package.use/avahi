@@ -1,0 +1,1 @@
+net-dns/avahi -python -gtk dbus

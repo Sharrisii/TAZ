@@ -1,0 +1,22 @@
+#!/bin/bash
+
+echo "***************************"
+echo "** Begin TAZ postinstall **"
+
+echo "* autostart X"
+
+# catalyst calls X autostart from root user bashrc,
+# but in our case taz user is the one that gets logged in at boot
+cat /root/.bashrc >> /home/taz/.bashrc
+# switch "echo startx | su - 'taz'" for plain "startx" since
+# this is now executed directly by taz user
+sed -i '/echo startx/ s/echo.*/startx/' /home/taz/.bashrc
+cp /etc/skel/.bashrc /root/.bashrc
+
+echo "* enable services"
+
+rc-update add autofs default
+rc-update add dbus default
+
+echo "** End TAZ postinstall **"
+echo "**************************"

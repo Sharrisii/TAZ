@@ -1,0 +1,19 @@
+# required by =sys-devel/gcc-4.9.4 (argument)
+# /usr/portage/profiles/package.mask:
+# Michał Górny <mgorny@gentoo.org>, Andreas K. Hüttel <dilfridge@gentoo.org>,
+# Matthias Maier <tamiko@gentoo.org> (21 May 2017)
+# These old versions of toolchain packages (binutils, gcc, glibc) are no
+# longer officially supported and are not suitable for general use. Using
+# these packages can result in build failures (and possible breakage) for
+# many packages, and may leave your system vulnerable to known security
+# exploits.
+# If you still use one of these old toolchain packages, please upgrade (and
+# switch the compiler / the binutils) ASAP. If you need them for a specific
+# (isolated) use case, feel free to unmask them on your system.
+# (updated 27 Dec 2017 with gcc < 5.4)
+sys-devel/gcc:4.9.4
+# required by www-client/palemoon (argument)
+# /var/lib/layman/palemoon/profiles/package.mask:
+# Masked because building it with the default compiler produces
+# an unstable build.
+=www-client/palemoon-27.9.3
