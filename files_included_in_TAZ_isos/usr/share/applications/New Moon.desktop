@@ -5,4 +5,4 @@ Type=Application
 NoDisplay=true
 Exec=/mnt/livecd/usr/lib/palemoon/palemoon %u
 Name=New Moon
-Comment=Custom definition for New Moon
+Comment=New Moon
