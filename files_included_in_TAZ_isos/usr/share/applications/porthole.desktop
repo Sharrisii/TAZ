@@ -8,4 +8,4 @@ Icon=porthole-icon.png
 Exec=porthole
 StartupNotify=true
 Type=Application
-Categories=System;PackageManager;
+Categories=Utility;System
