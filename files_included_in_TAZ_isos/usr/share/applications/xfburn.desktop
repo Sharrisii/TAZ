@@ -9,7 +9,7 @@ TryExec=xfburn
 Icon=stock_xfburn
 MimeType=application/x-cd-image;
 Terminal=false
-Categories=Utility;System;
+Categories=Utility
 StartupNotify=true
 
 Actions=BurnImage;
