@@ -1,11 +1,10 @@
 [Desktop Entry]
 Type=Application
-Name=Keyboard and Mouse
-Name[en_GB]=Keyboard and Mouse
+Name=LXInput
+GenericName=Keyboard and Mouse
+Comment=Configure keyboard, mouse, and other input devices
 Icon=input-keyboard
 Exec=lxinput
-Comment=Configure keyboard, mouse, and other input devices
-Comment[en_GB]=Configure keyboard, mouse, and other input devices
 StartupNotify=true
 Terminal=false
 Categories=GTK;Settings;HardwareSettings;X-LXDE-Settings;
