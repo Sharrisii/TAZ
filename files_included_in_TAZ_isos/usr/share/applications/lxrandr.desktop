@@ -1,8 +1,7 @@
 [Desktop Entry]
-Name=Monitor Settings
-Name[en_GB]=Monitor Settings
+Name=LXRandr
+GenericName=Monitor Settings
 Comment=Change screen resolution and configure external monitors
-Comment[en_GB]=Change screen resolution and configure external monitors
 Exec=lxrandr
 Icon=video-display
 Terminal=false
