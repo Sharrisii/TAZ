@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Lightspark
-Comment=An alternative flash player
+Comment=A shockwave flash (SWF) player
 TryExec=lightspark
 Exec=lightspark
 Icon=lightspark
