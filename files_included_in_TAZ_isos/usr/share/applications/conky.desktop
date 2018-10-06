@@ -1,11 +1,9 @@
 [Desktop Entry]
+Name=Conky
+GenericName=Conky
 Categories=Utility;
 Exec=conky -d -b
-GenericName=Conky
-Name=Conky
-Name[en_US]=Conky
-Comment=Conky system monitor
-Comment[en_US]=Conky system monitor
+Comment=System monitor
 Terminal=false
 Type=Application
 Version=1.0
