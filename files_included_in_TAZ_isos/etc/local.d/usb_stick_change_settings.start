@@ -18,7 +18,11 @@ if [ -f /mnt/*/bootscripts/wallpaper.sh ]; then
   /mnt/*/bootscripts/wallpaper.sh
   
 # Change feh-screensaver settings via usb stick (script located at /bootscripts/feh-screensaver.sh)
-sleep 20
+sleep 15
 if [ -f /mnt/*/bootscripts/feh-screensaver.sh ]; then
 /mnt/*/bootscripts/feh-screensaver.sh 120
 
+# Change openbox keybinds settings via usb stick (script located at /bootscripts/openbox_keybinds.sh)
+sleep 20
+if [ -f /mnt/*/bootscripts/openbox_keybinds.sh ]; then
+/mnt/*/bootscripts/openbox_keybinds.sh
