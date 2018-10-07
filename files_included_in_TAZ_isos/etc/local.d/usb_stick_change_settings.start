@@ -42,3 +42,8 @@ else conky -c /etc/conky.conf -p 90
 
 fi
 
+# Change palemoon settings via usb stick (script located at /bootscripts/palemoon_secimp_settings.sh)
+sleep 5
+if [ -f /mnt/*/bootscripts/palemoon_secimp_settings.sh ]; then
+/mnt/*/bootscripts/palemoon_secimp_settings.sh
+
