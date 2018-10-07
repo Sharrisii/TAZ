@@ -52,4 +52,8 @@ sleep 20
 if [ -f /mnt/*/bootscripts/printer_setup.sh ]; && [ -f /net-print/cups ] then
 /mnt/*/bootscripts/printer_setup.sh
 
+# Change scanner settings via usb stick (script located at /bootscripts/scanner_setup.sh)
+sleep 20
+if [ -f /mnt/*/bootscripts/scanner_setup.sh ]; && [ -f /media-gfx/sane-backends ] then
+/mnt/*/bootscripts/scanner_setup.sh
 
