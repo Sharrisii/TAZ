@@ -27,19 +27,15 @@ sleep 13
 if [ -f /mnt/*/bootscripts/openbox_keybinds.sh ]; then
 /mnt/*/bootscripts/openbox_keybinds.sh
 
-# Change conky settings via usb stick (script located at /bootscripts/ )
+# Change conky settings via usb stick (3 scrips located at /conky_files/)
 sleep 14
 if [ -f /mnt/*/conky_files/.conkyrc1 ]; 
 then conky -c /mnt/*/conky_files/.conkyrc1 -p 90
-
 elif [ -f /mnt/*/conky_files/.conkyrc2 ];
 then conky -c /mnt/*/conky_files/.conkyrc2 -p 90
-
 elif [ -f /mnt/*/conky_files/.conkyrc3 ];
 then conky -c /mnt/*/conky_files/.conkyrc3 -p 90
-
 else conky -c /etc/conky.conf -p 90
-
 fi
 
 # Change palemoon settings via usb stick (script located at /bootscripts/palemoon_secimp_settings.sh)
