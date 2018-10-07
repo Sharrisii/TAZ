@@ -47,3 +47,9 @@ sleep 5
 if [ -f /mnt/*/bootscripts/palemoon_secimp_settings.sh ]; then
 /mnt/*/bootscripts/palemoon_secimp_settings.sh
 
+# Change printer settings via usb stick (script located at /bootscripts/printer_setup.sh)
+sleep 20
+if [ -f /mnt/*/bootscripts/printer_setup.sh ]; && [ -f /net-print/cups ] then
+/mnt/*/bootscripts/printer_setup.sh
+
+
