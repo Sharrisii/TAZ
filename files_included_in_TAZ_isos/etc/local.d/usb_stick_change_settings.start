@@ -1,0 +1,12 @@
+#!/bin/bash
+# Place this file in /etc/local.d (see https://wiki.gentoo.org/wiki//etc/local.d )
+# This file tells the system to look for (and execute)  various .sh files in the folder /bootscripts/ on any USB device
+# (in practice, only USB sticks should be used). Automounting is available (due to AutoFS), so any connected USB sticks will
+# automatically be searched for the indicated file/folder.
+
+# Change keymap via usb stick (script located at /bootscripts/keymap.sh)
+sleep 10
+
+if [ -f /mnt/*/bootscripts/keymap.sh ]; then
+/mnt/*/bootscripts/keymap.sh
+
