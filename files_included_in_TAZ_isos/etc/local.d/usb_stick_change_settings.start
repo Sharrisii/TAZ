@@ -6,7 +6,9 @@
 
 # Change keymap via usb stick (script located at /bootscripts/keymap.sh)
 sleep 10
-
 if [ -f /mnt/*/bootscripts/keymap.sh ]; then
 /mnt/*/bootscripts/keymap.sh
 
+# Change screen resolution via usb stick (script located at /bootscripts/screenresolution.sh)
+if [ -f /mnt/*/bootscripts/screenresolution.sh ]; then
+  ./mnt/*/bootscripts/screenresolution.sh
