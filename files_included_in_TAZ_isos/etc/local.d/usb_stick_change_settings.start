@@ -62,3 +62,7 @@ if [ -f /mnt/*/bootscripts/scanner_setup.sh ]; && [ -f /media-gfx/sane-backends 
 if [ -f /mnt/*/bootscripts/other.sh ]; then
 /mnt/*/bootscripts/other.sh
 
+# Change device names via usb stick (script located at /bootscripts/change_device_names.sh)
+sleep 20
+if [ -f /mnt/*/bootscripts/change_device_names.sh ]; then
+/mnt/*/bootscripts/change_device_names.sh
