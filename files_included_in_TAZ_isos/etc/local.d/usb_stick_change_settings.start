@@ -18,11 +18,27 @@ if [ -f /mnt/*/bootscripts/wallpaper.sh ]; then
   /mnt/*/bootscripts/wallpaper.sh
   
 # Change feh-screensaver settings via usb stick (script located at /bootscripts/feh-screensaver.sh)
-sleep 15
+sleep 12
 if [ -f /mnt/*/bootscripts/feh-screensaver.sh ]; then
 /mnt/*/bootscripts/feh-screensaver.sh 120
 
 # Change openbox keybinds settings via usb stick (script located at /bootscripts/openbox_keybinds.sh)
-sleep 20
+sleep 13
 if [ -f /mnt/*/bootscripts/openbox_keybinds.sh ]; then
 /mnt/*/bootscripts/openbox_keybinds.sh
+
+# Change conky settings via usb stick (script located at /bootscripts/ )
+sleep 14
+if [ -f /mnt/*/conky_files/.conkyrc1 ]; 
+then conky -c /mnt/*/conky_files/.conkyrc1 -p 90
+
+elif [ -f /mnt/*/conky_files/.conkyrc2 ];
+then conky -c /mnt/*/conky_files/.conkyrc2 -p 90
+
+elif [ -f /mnt/*/conky_files/.conkyrc3 ];
+then conky -c /mnt/*/conky_files/.conkyrc3 -p 90
+
+else conky -c /etc/conky.conf -p 90
+
+fi
+
