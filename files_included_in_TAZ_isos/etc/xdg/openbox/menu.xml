@@ -41,10 +41,17 @@
 				</command>
 			</action>
 		</item>
-		<item label="Xarchiver">
+		<item label="Gmrun">
 			<action name="Execute">
 				<command>
-					xarchiver
+					gmrun
+				</command>
+			</action>
+		</item>
+		<item label="LXDE-Logout">
+			<action name="Execute">
+				<command>
+					lxde-logout
 				</command>
 			</action>
 		</item>
