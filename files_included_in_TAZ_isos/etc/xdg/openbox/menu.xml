@@ -41,66 +41,10 @@
 				</command>
 			</action>
 		</item>
-		<item label="GParted">
-			<action name="Execute">
-				<command>
-					gparted
-				</command>
-			</action>
-		</item>
 		<item label="Xarchiver">
 			<action name="Execute">
 				<command>
 					xarchiver
-				</command>
-			</action>
-		</item>
-		<item label="Galculator">
-			<action name="Execute">
-				<command>
-					galculator
-				</command>
-			</action>
-		</item>
-		<item label="Alsaplayer">
-			<action name="Execute">
-				<command>
-					alsaplayer
-				</command>
-			</action>
-		</item>
-		<item label="MPS-Youtube">
-			<action name="Execute">
-				<command>
-					sakura -e mpsyt
-				</command>
-			</action>
-		</item>
-		<item label="Gajim">
-			<action name="Execute">
-				<command>
-					gajim
-				</command>
-			</action>
-		</item>
-		<item label="Linphone">
-			<action name="Execute">
-				<command>
-					linphone
-				</command>
-			</action>
-		</item>
-		<item label="GPicView">
-			<action name="Execute">
-				<command>
-					gpicview
-				</command>
-			</action>
-		</item>
-		<item label="Xfburn">
-			<action name="Execute">
-				<command>
-					xfburn
 				</command>
 			</action>
 		</item>
