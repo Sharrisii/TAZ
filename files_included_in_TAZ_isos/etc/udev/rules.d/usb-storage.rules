@@ -1,0 +1,1 @@
+ACTION=="add", KERNEL=="sd[a-z]1", RUN+="/usr/bin/usbmount.sh"
