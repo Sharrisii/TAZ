@@ -41,10 +41,17 @@
 				</command>
 			</action>
 		</item>
-		<item label="Gmrun">
+		<item label="Sakura">
 			<action name="Execute">
 				<command>
-					gmrun
+					sakura
+				</command>
+			</action>
+		</item>
+		<item label="LXpanelctl run">
+			<action name="Execute">
+				<command>
+					lxpanelctl run
 				</command>
 			</action>
 		</item>
