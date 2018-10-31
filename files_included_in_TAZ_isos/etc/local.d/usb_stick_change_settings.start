@@ -13,9 +13,9 @@ if [ -f /mnt/*/bootscripts/keymap.sh ]; then
 if [ -f /mnt/*/bootscripts/screenresolution.sh ]; then
 /mnt/*/bootscripts/screenresolution.sh
 
-# Change wallpaper color via usb stick (script located at /bootscripts/screenresolution.sh)
-if [ -f /mnt/*/bootscripts/wallpaper.sh ]; then
-/mnt/*/bootscripts/wallpaper.sh
+# Change fonts, themes, background color via usb stick (script located at /bootscripts/screenresolution.sh)
+if [ -f /mnt/*/bootscripts/fonts_themes.sh ]; then
+/mnt/*/bootscripts/fonts_themes.sh
   
 # Change feh-screensaver settings via usb stick (script located at /bootscripts/feh-screensaver.sh)
 sleep 12
