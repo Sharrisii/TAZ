@@ -7,5 +7,5 @@ Upon boot, the data of the selected boot setup on the livecd or liveusb is writt
 regular hard disk to be present (although you will require a fair amount of RAM)-.
 The TAZ livecd/liveusb iso's also include the files found in the /files_included_in_TAZ_isos/ github folder. These files allow the
 iso to retrieve the settings, scripts, ... found in the "TAZ_optional_usb_stick"-repo which are to be downloaded and placed on a
-USB-stick. The use stick needs to be inserted to the PC before every boot.
-For x86, the lowest supported class of cpu's are the SSE-cpu's, so Pentium 3 / Athlon Xp.
+USB-stick. In the x86 version, besides these scripts, settings, ... this USB stick also holds the programs for boot setup 2 to 7 (as well as a possible 8th boot setup). So, this USB stick needs to be inserted to the PC before every boot for these settings, scripts, and the 2nd to 8th boot setup to work (booting the cd without the USB stick is possible but you then don't get any of these.) For x86, the lowest supported class of cpu's are the SSE-cpu's, so Pentium 3 / Athlon Xp.
+For the amd64-version, boot setup 2 to 7 will be on the iso instead (so you can write the iso with boot setup 1 to 7 to a dvd or a USB stick (writing to a USB stick is not recommended for safety reasons, but possible). The 8th boot setup and the settings and scripts will remain on the optional usb stick repo for writing to a USB stick.
