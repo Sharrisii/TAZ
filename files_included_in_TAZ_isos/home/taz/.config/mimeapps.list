@@ -11,6 +11,7 @@ application/x-extension-shtml=palemoon.desktop
 application/xhtml+xml=palemoon.desktop
 application/x-extension-xhtml=palemoon.desktop
 application/x-extension-xht=palemoon.desktop
+x-scheme-handler/mailto=claws-mail.desktop
 
 [Added Associations]
 inode/directory=pcmanfm.desktop;
@@ -18,6 +19,7 @@ x-scheme-handler/http=palemoon.desktop;
 x-scheme-handler/https=palemoon.desktop;
 x-scheme-handler/ftp=palemoon.desktop;
 x-scheme-handler/chrome=palemoon.desktop;
+x-scheme-handler/mailto=exo-mail-reader.desktop;claws-mail.desktop;
 text/html=palemoon.desktop;
 application/x-extension-htm=palemoon.desktop;
 application/x-extension-html=palemoon.desktop;
