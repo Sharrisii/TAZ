@@ -12,31 +12,29 @@ Also note that even if you're putting the iso (which contains only boot setup 1)
 usb stick for the TAZ_optional_usb_stick boot setups and data (if you want to be able to boot the other boot setups and use the 
 additional data (scripts, ...) on this at least). 
 
-In the x86 version, the bootsetup2to7 folder containing the 7 different bootable archives to be started at boot are on the TAZ_optional_usb_stick repo.
-In the amd64 version, the bootsetup2to7 folder is on the iso.
+In the x86 version, the bootsetup2to6 folder containing the 6 different bootable archives to be started at boot are on the TAZ_optional_usb_stick repo.
+In the amd64 version, the bootsetup2to6 folder is on the iso.
 In both cases, the bootable archives are squashfs archives.
-The reason why in the amd64 version the bootsetup2to7 folder is placed on the iso is because with amd64 machines, we can expect that a dvd-reader is present, and/or that BIOS USB stick booting is available (we can't assume that with x86 machines however, so there the bootsetup2to7 folder is placed in the TAZ_optional_usb_stick repo).
+The reason why in the amd64 version the bootsetup2to6 folder is placed on the iso is because with amd64 machines, we can expect that a dvd-reader is present, and/or that BIOS USB stick booting is available (we can't assume that with x86 machines however, so there the bootsetup2to6 folder is placed in the TAZ_optional_usb_stick repo).
 
 Operating principles of the live cd:
 
-A boot screen is shown, displaying the 8 different boot options, knowingly:
+A boot screen is shown, displaying the 7 different boot options, knowingly:
 Boot setup 1: core programs only (cd)
 Boot setup 2: core programs (cd) + cups + abiword + gnumeric (TAZ_optional_usb_stick)
 Boot setup 3: core programs (cd) + impressive (TAZ_optional_usb_stick)
 Boot setup 4: core programs (cd) + inkscape (TAZ_optional_usb_stick)
 Boot setup 5: core programs (cd) + sane-backends + GIMP (TAZ_optional_usb_stick)
 Boot setup 6: core programs (cd) + mpv (TAZ_optional_usb_stick)
-Boot setup 7: core programs (cd) + Claws mail (TAZ_optional_usb_stick)
-Boot setup 8: core programs (cd) + customized programs (TAZ_optional_usb_stick)
+Boot setup 7: core programs (cd) + customized programs (TAZ_optional_usb_stick)
 
-core programs are placed on the cd, and the rest is placed in archives (under the folders bootsetup2to7 and bootsetup8, present either on the USB stick or on the iso, depending on whether you're using the x86 or amd64 version): 
+core programs are placed on the cd, and the rest is placed in archives (under the folders bootsetup2to6 and bootsetup7, present either on the USB stick or on the iso, depending on whether you're using the x86 or amd64 version): 
 system-config-printer + abiword + gnumeric is placed in archive2.squashfs,
 impressive is placed in archive3.squashfs,
 inkscape is placed in archive4.squashfs,
 GIMP is placed in archive5.squashfs,
 mpv is placed in archive6.squashfs,
-Claws mail is placed in archive7.squashfs,
-customized programs are placed in archive8.squashfs
+customized programs are placed in archive7.squashfs
 
 this technique is similar to http://doc.slitaz.org/en:guides:manyinone
 after selecting one of these options, it will copy all data of this setup option (core programs= 1 compressed file, additional
@@ -57,11 +55,11 @@ A usb stick is also used to store not only the main boot archives but also addit
 hardware like graphics cards -if he wants better support than the standard x vesa-, printers, scanners, modems, ...) and 
 settings. Programs that require the presence of special drivers (i.e. Blender, ...) are also found on the usb stick. Some users 
 may also want to add programs for administrative things, i.e. eid-mw, ledger-software, ....
-This is all possible by having the 8th boot setup on the livecd/liveusb activate a script which tells the system to include any 
-squashfs archives placed on the "bootsetup8" folder on the usb stick. Users can make their own squashfs archive in the
-bootsetup8 folder by gathering the installation files via the package manager (or via github, ...) and installing it to the
-bootsetup8 folder, and then compressing the files into a squashfs archive. The squashfs archive needs to be named 
-"archive8.squashfs" so the script can find and launch it.
+This is all possible by having the 7th boot setup on the livecd/liveusb activate a script which tells the system to include any 
+squashfs archives placed on the "bootsetup7" folder on the usb stick. Users can make their own squashfs archive in the
+bootsetup7 folder by gathering the installation files via the package manager (or via github, ...) and installing it to the
+bootsetup7 folder, and then compressing the files into a squashfs archive. The squashfs archive needs to be named 
+"archive7.squashfs" so the script can find and launch it.
 An alternative to this is -in case you have MS Windows (XP, 2000, ...) installed to a harddisk- to use MS Windows for those
 tasks you can't do in TAZ (due to lack of drivers, ...).
 
