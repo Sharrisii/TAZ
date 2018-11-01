@@ -60,9 +60,10 @@ media-sound/alsaplayer
 www-client/palemoon
 app-arch/par2cmdline
 dev-python/pyopenssl
+mail-client/claws-mail
 "
 
-TAZ_packagelist_bootsetup2to7 ="
+TAZ_packagelist_bootsetup2to6 ="
 net-print/cups
 app-office/abiword
 app-office/gnumeric
@@ -71,10 +72,9 @@ media-gfx/inkscape
 media-gfx/sane-backends
 media-gfx/gimp
 media-video/mpv
-mail-client/claws-mail
 "
 
-archive8.squashfs_(SecuriTAZ_bundle)_packagelist ="
+archive7.squashfs_(SecuriTAZ_bundle)_packagelist ="
 TAZ_packagelist_core +
 app-crypt/eid-mw 
 app-crypt/ledger-live-desktop
