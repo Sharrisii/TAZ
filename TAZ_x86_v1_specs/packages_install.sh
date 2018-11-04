@@ -16,6 +16,7 @@ sys-apps/portage
 sys-apps/util-linux
 app-portage/porthole
 app-portage/layman
+sys-devel/bc
 sys-block/gparted
 app-admin/hardinfo
 sys-apps/man-pages
@@ -58,9 +59,9 @@ media-gfx/feh
 x11-misc/xprintidle
 media-sound/alsaplayer
 www-client/palemoon
+mail-client/claws-mail
 app-arch/par2cmdline
 dev-python/pyopenssl
-mail-client/claws-mail
 "
 
 TAZ_packagelist_bootsetup2to6 ="
