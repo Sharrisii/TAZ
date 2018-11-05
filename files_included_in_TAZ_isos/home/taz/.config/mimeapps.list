@@ -4,6 +4,7 @@ x-scheme-handler/http=userapp-New Moon-*.desktop
 x-scheme-handler/https=userapp-New Moon-*.desktop
 x-scheme-handler/ftp=userapp-New Moon-*.desktop
 x-scheme-handler/chrome=userapp-New Moon-*.desktop
+x-scheme-handler/mailto=claws-mail.desktop
 text/html=userapp-New Moon-*.desktop
 application/x-extension-htm=userapp-New Moon-*.desktop
 application/x-extension-html=userapp-New Moon-*.desktop
@@ -11,7 +12,6 @@ application/x-extension-shtml=userapp-New Moon-*.desktop
 application/xhtml+xml=userapp-New Moon-*.desktop
 application/x-extension-xhtml=userapp-New Moon-*.desktop
 application/x-extension-xht=userapp-New Moon-*.desktop
-x-scheme-handler/mailto=claws-mail.desktop
 
 [Added Associations]
 inode/directory=pcmanfm.desktop;
