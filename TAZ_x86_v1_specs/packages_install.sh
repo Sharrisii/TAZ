@@ -33,6 +33,7 @@ app-editors/leafpad
 sci-calculators/galculator
 net-misc/curl
 x11-apps/setxkbmap
+x11-apps/xwd
 dev-util/geany
 app-arch/xarchiver
 media-gfx/gpicview
