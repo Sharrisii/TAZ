@@ -1,29 +1,5 @@
 [Default Applications]
 inode/directory=pcmanfm.desktop
-x-scheme-handler/http=userapp-palemoon-*.desktop
-x-scheme-handler/https=userapp-palemoon-*.desktop
-x-scheme-handler/ftp=userapp-palemoon-*.desktop
-x-scheme-handler/chrome=userapp-palemoon-*.desktop
-x-scheme-handler/mailto=claws-mail.desktop
-text/html=userapp-New Moon-*.desktop
-application/x-extension-htm=userapp-palemoon-*.desktop
-application/x-extension-html=userapp-palemoon-*.desktop
-application/x-extension-shtml=userapp-palemoon-*.desktop
-application/xhtml+xml=userapp-palemoon-*.desktop
-application/x-extension-xhtml=userapp-palemoon-*.desktop
-application/x-extension-xht=userapp-palemoon-*.desktop
 
 [Added Associations]
 inode/directory=pcmanfm.desktop;
-x-scheme-handler/http=userapp-palemoon-*.desktop;
-x-scheme-handler/https=userapp-palemoon-*.desktop;
-x-scheme-handler/ftp=userapp-palemoon-*.desktop;
-x-scheme-handler/chrome=userapp-palemoon-*.desktopp;
-x-scheme-handler/mailto=exo-mail-reader.desktop;claws-mail.desktop;
-text/html=userapp-palemoon-*.desktop;
-application/x-extension-htm=userapp-palemoon-*.desktop;
-application/x-extension-html=userapp-palemoon-*.desktop;
-application/x-extension-shtml=userapp-palemoon-*.desktop;
-application/xhtml+xml=userapp-palemoon-*.desktop;
-application/x-extension-xhtml=userapp-palemoon-*.desktop;
-application/x-extension-xht=userapp-palemoon-*.desktop;
