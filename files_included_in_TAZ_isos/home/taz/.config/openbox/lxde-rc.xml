@@ -298,7 +298,7 @@
     </keybind>
     <keybind key="Print">
       <action name="Execute">
-        <command>xwd</command>
+        <command>bash -c "xwd | convert - /tmp/screenshot-$(date +%h%m%s).png"</command>
       </action>
     </keybind>
     <keybind key="W-x">
