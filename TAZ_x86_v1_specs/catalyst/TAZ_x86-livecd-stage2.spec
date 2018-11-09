@@ -54,7 +54,6 @@ livecd/unmerge:
     bison
     flex
     gettext
-    bc
     genkernel
     diffutils
     gnuconfig

@@ -103,9 +103,11 @@ livecd/packages:
     sys-apps/util-linux
     sys-block/gparted
     sys-boot/syslinux
+    sys-devel/bc
     www-client/palemoon
     www-plugins/lightspark
     x11-apps/setxkbmap
+    x11-apps/xwd
     x11-base/xorg-server
     x11-drivers/xf86-video-vesa
     x11-misc/gmrun
