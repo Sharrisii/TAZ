@@ -110,7 +110,6 @@ livecd/packages:
     x11-drivers/xf86-video-vesa
     x11-misc/gmrun
     x11-misc/pcmanfm
-    x11-misc/slim
     x11-misc/xprintidle
     x11-terms/sakura
     x11-wm/openbox
