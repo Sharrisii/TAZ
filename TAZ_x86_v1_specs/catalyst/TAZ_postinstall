@@ -3,6 +3,12 @@
 echo "***************************"
 echo "** Begin TAZ postinstall **"
 
+echo "* fixup homedir ownership"
+
+# make sure taz homedir ends up owned by taz, since it will
+# be owned by root when created by the rootfs overlay mechanism
+chown -R taz:users /home/taz
+
 echo "* autostart X"
 
 # catalyst calls X autostart from root user bashrc,
@@ -17,6 +23,16 @@ echo "* enable services"
 
 rc-update add autofs default
 rc-update add dbus default
+
+echo "* configure usb automount"
+
+# support a couple of typical partitions for now
+echo "## USB automounts" >> /etc/fstab
+for DEV in sda1 sdb1 ; do
+  mkdir /mnt/$DEV
+  touch /mnt/$DEV/.keep
+  echo "/dev/$DEV /mnt/$DEV auto defaults,users,exec,sync 0 0" >> /etc/fstab
+done
 
 echo "** End TAZ postinstall **"
 echo "**************************"

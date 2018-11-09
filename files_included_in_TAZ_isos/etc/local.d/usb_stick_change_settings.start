@@ -5,30 +5,35 @@
 # automatically be searched for the indicated file/folder.
 
 # Change keymap via usb stick (script located at /bootscripts/keymap.sh)
-sleep 10
+##sleep 10
 if [ -f /mnt/*/bootscripts/keymap.sh ]; then
 /mnt/*/bootscripts/keymap.sh
+fi
 
 # Change screen resolution via usb stick (script located at /bootscripts/screenresolution.sh)
 if [ -f /mnt/*/bootscripts/screenresolution.sh ]; then
 /mnt/*/bootscripts/screenresolution.sh
+fi
 
 # Change fonts, themes, background color via usb stick (script located at /bootscripts/screenresolution.sh)
 if [ -f /mnt/*/bootscripts/fonts_themes.sh ]; then
 /mnt/*/bootscripts/fonts_themes.sh
+fi
   
 # Change feh-screensaver settings via usb stick (script located at /bootscripts/feh-screensaver.sh)
-sleep 12
+##sleep 12
 if [ -f /mnt/*/bootscripts/feh-screensaver.sh ]; then
 /mnt/*/bootscripts/feh-screensaver.sh 120
+fi
 
 # Change openbox keybinds settings via usb stick (script located at /bootscripts/openbox_keybinds.sh)
-sleep 13
+##sleep 13
 if [ -f /mnt/*/bootscripts/openbox_keybinds.sh ]; then
 /mnt/*/bootscripts/openbox_keybinds.sh
+fi
 
 # Change conky settings via usb stick (3 scrips located at /conky_files/)
-sleep 14
+##sleep 14
 if [ -f /mnt/*/conky_files/.conkyrc1 ]; 
 then conky -c /mnt/*/conky_files/.conkyrc1 -p 90
 elif [ -f /mnt/*/conky_files/.conkyrc2 ];
@@ -39,26 +44,31 @@ else conky -c /etc/conky.conf -p 90
 fi
 
 # Change palemoon settings via usb stick (script located at /bootscripts/palemoon_secimp_settings.sh)
-sleep 5
+##sleep 5
 if [ -f /mnt/*/bootscripts/palemoon_secimp_settings.sh ]; then
 /mnt/*/bootscripts/palemoon_secimp_settings.sh
+fi
 
 # Change printer settings via usb stick (script located at /bootscripts/printer_setup.sh)
-sleep 20
-if [ -f /mnt/*/bootscripts/printer_setup.sh ]; && [ -f /net-print/cups ] then
+##sleep 20
+if [ -f /mnt/*/bootscripts/printer_setup.sh ]; then
 /mnt/*/bootscripts/printer_setup.sh
+fi
 
 # Change scanner settings via usb stick (script located at /bootscripts/scanner_setup.sh)
-sleep 20
-if [ -f /mnt/*/bootscripts/scanner_setup.sh ]; && [ -f /media-gfx/sane-backends ] then
+##sleep 20
+if [ -f /mnt/*/bootscripts/scanner_setup.sh ]; then
 /mnt/*/bootscripts/scanner_setup.sh
+fi
 
 # Change settings of additional programs, set up networking (if using modem), ... via usb stick 
 # (script located at /bootscripts/other.sh)
 if [ -f /mnt/*/bootscripts/other.sh ]; then
 /mnt/*/bootscripts/other.sh
+fi
 
 # Change device names via usb stick (script located at /bootscripts/change_device_names.sh)
-sleep 20
+##sleep 20
 if [ -f /mnt/*/bootscripts/change_device_names.sh ]; then
 /mnt/*/bootscripts/change_device_names.sh
+fi
