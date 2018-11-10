@@ -1,3 +1,0 @@
-[Desktop Action View]
-Name=View with mupdf
-Exec=mupdf %f
