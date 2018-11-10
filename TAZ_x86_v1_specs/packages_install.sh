@@ -42,6 +42,7 @@ net-im/gajim
 net-voip/linphone
 x11-misc/gmrun
 x11-misc/slim
+x11-misc/slock
 app-antivirus/clamav
 dev-vcs/git
 net-fs/nfs-utils
