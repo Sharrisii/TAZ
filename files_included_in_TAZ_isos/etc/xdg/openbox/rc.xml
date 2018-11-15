@@ -215,15 +215,6 @@
         <menu>root-menu</menu>
       </action>
     </keybind>
-     <keybind key="C-a">
-      <action name="Execute">
-        <startupnotify>
-          <enabled>true</enabled>
-          <name>Appearance</name>
-        </startupnotify>
-        <command>lxappearance</command>
-      </action>
-    </keybind>
     <keybind key="C-f">
       <action name="Execute">
         <startupnotify>
