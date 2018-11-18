@@ -34,6 +34,9 @@ sci-calculators/galculator
 net-misc/curl
 x11-apps/setxkbmap
 x11-apps/xwd
+dev-python/httplib2
+dev-python/requests
+dev-python/requests-oauthlib
 dev-util/geany
 app-arch/xarchiver
 media-gfx/gpicview
