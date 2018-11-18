@@ -17,6 +17,9 @@ app-portage/porthole (https://packages.gentoo.org/categories/app-portage/porthol
 ### Need to work out conflict with bindist useflag
 ### dev-libs/openssl:0[-bindist(-)] required by (dev-python/cryptography-2.1.4-r1:0/0::gentoo 
 #dev-python/pyopenssl (https://packages.gentoo.org/categories/dev-python/pyopenssl)
+dev-python/httplib2 (https://packages.gentoo.org/packages/dev-python/httplib2)
+dev-python/requests (https://packages.gentoo.org/packages/dev-python/requests)
+dev-python/requests-oauthlib (https://packages.gentoo.org/packages/dev-python/requests-oauthlib)
 dev-util/geany (https://packages.gentoo.org/categories/dev-util/geany)
 dev-vcs/git (https://packages.gentoo.org/categories/dev-vcs/git)
 lxde-base/lxappearance (https://packages.gentoo.org/categories/lxde-base/lxappearance)
