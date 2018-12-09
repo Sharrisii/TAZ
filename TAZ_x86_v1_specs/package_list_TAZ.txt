@@ -19,7 +19,7 @@ app-portage/porthole (https://packages.gentoo.org/categories/app-portage/porthol
 #dev-python/pyopenssl (https://packages.gentoo.org/categories/dev-python/pyopenssl)
 dev-python/httplib2 (https://packages.gentoo.org/packages/dev-python/httplib2)
 dev-python/requests (https://packages.gentoo.org/packages/dev-python/requests)
-dev-python/pip (https://wiki.gentoo.org/wiki/Pip)
+dev-python/pip (https://packages.gentoo.org/packages/dev-python/pip)
 dev-util/geany (https://packages.gentoo.org/categories/dev-util/geany)
 dev-vcs/git (https://packages.gentoo.org/categories/dev-vcs/git)
 lxde-base/lxappearance (https://packages.gentoo.org/categories/lxde-base/lxappearance)
