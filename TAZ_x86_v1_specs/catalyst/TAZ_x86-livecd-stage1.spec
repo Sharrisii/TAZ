@@ -68,6 +68,9 @@ livecd/packages:
     app-office/gnumeric
     app-office/impressive
     app-portage/porthole
+    dev-python/httplib2
+    dev-python/requests
+    dev-python/requests-oauthlib
     dev-util/geany
     dev-vcs/git
     lxde-base/lxappearance
@@ -112,6 +115,7 @@ livecd/packages:
     x11-drivers/xf86-video-vesa
     x11-misc/gmrun
     x11-misc/pcmanfm
+    x11-misc/slock
     x11-misc/xprintidle
     x11-terms/sakura
     x11-wm/openbox
