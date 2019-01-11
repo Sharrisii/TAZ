@@ -11,7 +11,9 @@ chown -R taz:users /home/taz
 
 echo "* update group membership"
 
-usermod -a -G lp,lpadmin,video,scanner taz
+for GRP in lp lpadmin video scanner ; do
+  usermod -a -G $GRP taz
+done
 
 echo "* autostart X"
 
@@ -25,7 +27,6 @@ cp /etc/skel/.bashrc /root/.bashrc
 
 echo "* enable services"
 
-rc-update add autofs default
 rc-update add dbus default
 rc-update add set-passwd default
 
