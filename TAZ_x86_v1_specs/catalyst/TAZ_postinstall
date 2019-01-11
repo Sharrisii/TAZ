@@ -9,6 +9,10 @@ echo "* fixup homedir ownership"
 # be owned by root when created by the rootfs overlay mechanism
 chown -R taz:users /home/taz
 
+echo "* update group membership"
+
+usermod -a -G lp,lpadmin,video,scanner taz
+
 echo "* autostart X"
 
 # catalyst calls X autostart from root user bashrc,
@@ -23,6 +27,7 @@ echo "* enable services"
 
 rc-update add autofs default
 rc-update add dbus default
+rc-update add set-passwd default
 
 echo "* configure usb automount"
 
@@ -33,6 +38,10 @@ for DEV in sda1 sdb1 ; do
   touch /mnt/$DEV/.keep
   echo "/dev/$DEV /mnt/$DEV auto defaults,users,exec,sync 0 0" >> /etc/fstab
 done
+
+echo "* remove extra python"
+emerge -c =dev-lang/python-3.5.5
+eselect python cleanup
 
 echo "** End TAZ postinstall **"
 echo "**************************"
