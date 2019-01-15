@@ -42,12 +42,12 @@ app-arch/xarchiver
 media-gfx/gpicview
 www-plugins/lightspark
 net-im/gajim
-net-voip/linphone
 x11-misc/gmrun
 x11-misc/slim
 x11-misc/slock
 app-antivirus/clamav
 dev-vcs/git
+dev-vcs/ghi
 net-fs/nfs-utils
 net-misc/dhcpcd
 net-misc/dhcpcd-ui
