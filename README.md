@@ -3,6 +3,10 @@ TAZ stands for temporary autonomous zone.
 Gentoo linux livecd/liveusb iso's can be found for x86 (32-bit) and amd64 (64-bit, both for amd as intel 64-bit cpu's).
 The TAZ livecd's differ from the official x86 and amd64 gentoo live media by being
 rather small (able to fit on a cd) while still having full livecd functionality (so not an install cd).
+We focus on low-end pc's so you can expect this distro to work fast regardless of system specs.
+Preferably use either refurbished pc's or 2nd hand pc's as these have a lower environmental impact.
+Our motto is also to "run the pc untill it breaks" rather than swapping it out for whatever latest fancy that just appeared on the market.
+That way, the environmental impact of your machine is again reduced, and you also save money at the same time.
 Upon boot, the data of the selected boot setup on the livecd or liveusb is written to tmpfs (RAM) -so there's not even a need for a 
 regular hard disk to be present (although you will require a fair amount of RAM)-.
 The TAZ livecd/liveusb iso's also include the files found in the /files_included_in_TAZ_isos/ github folder. These files allow the
