@@ -1,8 +1,8 @@
 # TAZ
 TAZ stands for temporary autonomous zone.
 Gentoo linux livecd/liveusb iso's can be found for x86 (32-bit) and amd64 (64-bit, both for amd as intel 64-bit cpu's).
-The 32-bit version has multilib and all libraries are available as 32-bit objects, so the 32-bit version can also be run on 64-bit pc's (so if you're unsure whether your machine is 64 or 32-bit, use 32-bit to get started).
-The 64-bit version is intented for high-end (64-bit) machines.
+The 32-bit version can be run on 32-bit and some 64-bit machines (the latter, only if the bios allows 32-bit legacy boot mode and that the 32-bit kernel offers the drivers needed for the 64-bit system).
+The 64-bit version can be run on all 64-bit machines, and is hence advised for 64-bit machines.
 The TAZ livecd's differ from the official x86 and amd64 gentoo live media by being
 rather small (able to fit on a cd) while still having full livecd functionality (so not an install cd).
 We focus on low-end pc's so you can expect this distro to work fast regardless of system specs.
