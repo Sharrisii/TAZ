@@ -68,6 +68,8 @@ x11-misc/pcmanfm (https://packages.gentoo.org/packages/x11-misc/pcmanfm)
 x11-misc/xprintidle (https://packages.gentoo.org/packages/x11-misc/xprintidle)
 x11-misc/slim (https://packages.gentoo.org/packages/x11-misc/slim)
 x11-misc/slock (https://packages.gentoo.org/categories/x11-misc/slock)
+x11-apps/mesa-progs (https://packages.gentoo.org/packages/x11-apps/mesa-progs)
+x11-libs/libdrm (https://packages.gentoo.org/packages/x11-libs/libdrm)
 x11-terms/sakura (https://packages.gentoo.org/packages/x11-terms/sakura)
 x11-wm/openbox (https://packages.gentoo.org/packages/x11-misc/pcmanfm)
 

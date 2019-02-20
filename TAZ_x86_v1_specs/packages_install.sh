@@ -62,6 +62,8 @@ net-fs/autofs
 app-admin/conky
 media-gfx/feh
 x11-misc/xprintidle
+x11-apps/mesa-progs
+x11-libs/libdrm
 media-sound/alsaplayer
 www-client/palemoon
 mail-client/claws-mail
