@@ -29,6 +29,7 @@ usr/portage/profiles/use.local.desc
 +cups
 +python
 +perl
++dbus
 +gtk
 -gtk3
 -qt4
@@ -37,7 +38,6 @@ usr/portage/profiles/use.local.desc
 -kde
 -gnome
 -systemd
--dbus?
 -sqlite
 -policykit
 -calendar
@@ -62,7 +62,6 @@ app-admin/conky +rss +wifi
 net-fs/nfs-utils +nfsv4 +nfsv41
 net-voip/linphone +video
 net-print/cups +python +usb
-x11-libs/libfm +udisks
 sys-auth/consolekit +policykit
 x11-misc/slim +consolekit
 media-video/ffmpeg +vaapi +vorbis +libdrm
