@@ -17,7 +17,7 @@ usr/portage/profiles/use.local.desc
 +suid?
 +musl
 +curl
-+libressl?
++openssl
 +upnp?
 +ssl
 +ldap?
@@ -50,7 +50,7 @@ usr/portage/profiles/use.local.desc
 /etc/portage/package.use
 -->
 lxde-base/lxpanel +alsa
-x11-base/xorg-server +xorg +xvfb? +glamor?
+x11-base/xorg-server +xorg +xvfb? +glamor
 sys-apps/portage +ipc? +native-extensions?
 app-portage/layman +bazaar? +cvs? +darcs? +g-sorcery? +gpg? +mercurial? +subversion? +sync-plugin-portage? +sqlite? +git
 sys-block/gparted +btrfs +dmraid +f2fs +fat +hfs +jfs +mdadm +ntfs +reiser4 +reiserfs +xfs
@@ -62,3 +62,9 @@ app-admin/conky +rss +wifi
 net-fs/nfs-utils +nfsv4 +nfsv41
 net-voip/linphone +video
 net-print/cups +python +usb
+x11-libs/libfm +udisks
+sys-auth/consolekit +policykit
+x11-misc/slim +consolekit
+media-video/ffmpeg +vaapi +vorbis +libdrm
+x11-libs/libva +drm
+x11-libs/libvdpau +dri
