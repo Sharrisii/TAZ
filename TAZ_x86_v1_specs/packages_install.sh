@@ -14,6 +14,7 @@ x11-drivers/xf86-video-vesa
 sys-apps/busybox
 sys-apps/portage
 sys-apps/util-linux
+sys-fs/e2fsprogs
 app-portage/porthole
 app-portage/layman
 sys-devel/bc
