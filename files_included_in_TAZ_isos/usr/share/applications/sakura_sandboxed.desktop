@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=Sakura (sandboxed)
+Type=Application
+Comment=Sakura in sandbox mode
+Exec=sandbox sakura
+Icon=sandbox
+Terminal=true
+Categories=GTK;Utility;TerminalEmulator;System;
