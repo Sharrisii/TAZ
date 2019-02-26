@@ -11,9 +11,6 @@
 =app-office/impressive-0.12.0 ~x86
 # stable mediastreamer ebuild has missing dependency
 =media-libs/mediastreamer-2.9.0-r2 ~x86
-=net-voip/linphone-3.6.1 ~x86
-# required by net-voip/linphone-3.6.1::gentoo
-# required by net-voip/linphone (argument)
 =net-libs/libeXosip-4.0.0 ~x86
 # required by www-client/palemoon (argument)
 =www-client/palemoon-27.9.3 ~x86
