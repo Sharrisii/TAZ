@@ -62,3 +62,4 @@ mail-client/claws-mail +clamav +pgp +smime +spam-report +spamassassin
 app-admin/conky +rss +wifi
 net-fs/nfs-utils +nfsv4 +nfsv41
 sys-auth/consolekit +policykit
+dev-vcs/git +pgp
