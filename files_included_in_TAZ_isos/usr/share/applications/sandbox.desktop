@@ -1,10 +1,10 @@
 [Desktop Entry]
 Version=1.0
-Name=sandbox
+Name=Sakura (sandbox)
 Type=Application
-Comment=launch a sandboxed shell ... useful for debugging ebuilds
+Comment=launch a sandboxed shell
 Exec=sandbox
 TryExec=sandbox
 Icon=sandbox
-Categories=Development;
 Terminal=true
+Categories=Development;
