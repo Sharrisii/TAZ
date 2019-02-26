@@ -60,7 +60,6 @@ media-video/mpv +alsa +vaapi
 mail-client/claws-mail +clamav +pgp +smime +spam-report +spamassassin
 app-admin/conky +rss +wifi
 net-fs/nfs-utils +nfsv4 +nfsv41
-net-voip/linphone +video
 net-print/cups +python +usb
 sys-auth/consolekit +policykit
 x11-misc/slim +consolekit
