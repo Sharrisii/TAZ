@@ -1,6 +1,6 @@
 [Desktop Entry]
 Version=1.0
-Name=Sakura (sandbox)
+Name=Sandbox
 Type=Application
 Comment=launch a sandboxed shell
 Exec=sandbox
