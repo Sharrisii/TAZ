@@ -1,8 +1,7 @@
 [Desktop Entry]
 Name=RubyGems
 Comment=Run rubygems in terminal
-TryExec=sakura
-Exec=sandbox rubygems
+Exec=sandbox sakura -e rubygems
 Icon=terminal-tango
 Type=Application
 Categories=GTK;Utility;TerminalEmulator;System;
