@@ -1,0 +1,2 @@
+This is a more elaborate list of packages installed on TAZ (latest version) for the core boot setup.
+It is made with the command cd /var/db/pkg && ls -d */*
