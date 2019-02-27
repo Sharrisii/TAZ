@@ -1,5 +1,6 @@
-http://edoceo.com/howto/catalyst
-https://gitweb.gentoo.org/proj/catalyst.git/tree/doc/HOWTO.txt
+This is a list with all main packages installed on TAZ (latest version) without the dependencies these packages bring with them. For the more elaborate list (which do include these dependencies), see package_list_elaborate_TAZ.txt
+See http://edoceo.com/howto/catalyst
+and https://gitweb.gentoo.org/proj/catalyst.git/tree/doc/HOWTO.txt
 
 ebuilds:
 
