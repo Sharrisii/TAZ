@@ -2,15 +2,13 @@ Every year: a new livecd/usb iso is made.
 You can burn the iso using TAZ on a cd-r using xfburn (assuming you already have TAZ and are not currently still working 
 on windows or another linux distro). This same program may be available on other linux distros (in case you're currently working 
 with that instead). If using windows, ImgBurn can be used.
-You can also place the iso on a usb stick instead of on a cd-r by means of a program such as:
+You can also place the iso on a usb stick (or memory card placed in a usb adapter) instead of on a cd-r by means of a program such as:
 * Universal USB installer (http://www.pendrivelinux.com/universal-usb-installer-easy-as-1-2-3/)
 * Linux Live USB creator (http://www.linuxliveusb.com/)
 * UNetbootin (https://unetbootin.github.io/)
 Please note that while placing the iso (which contains only boot setup 1) on a usb stick is possible, it is not recommended as 
-it is less safe. Reason for this is that the data on a cd-r is unchangable, whereas data on a usb stick it is not.
-Also note that even if you're putting the iso (which contains only boot setup 1) on a usb stick, you still need to use a second  
-usb stick for the TAZ_optional_usb_stick boot setups and data (if you want to be able to boot the other boot setups and use the 
-additional data (scripts, ...) on this at least). 
+it is less safe. Reason for this is that the data on a cd-r is unchangable, whereas data on a usb stick/memory card is not.
+Also note that even if you're putting the iso (which contains only boot setup 1) on a usb stick/memory card, you still need to use a second usb stick/memory card for the TAZ_optional_usb_stick boot setups and data (if you want to be able to boot the other boot setups and use the additional data (scripts, ...) on this at least). 
 
 In the x86 version, the bootsetup2to6 folder containing the 6 different bootable archives to be started at boot are on the TAZ_optional_usb_stick repo.
 In the amd64 version, the bootsetup2to6 folder is on the iso.
@@ -28,7 +26,7 @@ Boot setup 5: core programs (cd) + sane-backends + GIMP (TAZ_optional_usb_stick)
 Boot setup 6: core programs (cd) + mpv (TAZ_optional_usb_stick)
 Boot setup 7: core programs (cd) + customized programs (TAZ_optional_usb_stick)
 
-core programs are placed on the cd, and the rest is placed in archives (under the folders bootsetup2to6 and bootsetup7, present either on the USB stick or on the iso, depending on whether you're using the x86 or amd64 version): 
+core programs are placed on the cd, and the rest is placed in archives (under the folders bootsetup2to6 and bootsetup7, present either on the USB stick/memory card or on the iso, depending on whether you're using the x86 or amd64 version): 
 system-config-printer + abiword + gnumeric is placed in archive2.squashfs,
 impressive is placed in archive3.squashfs,
 inkscape is placed in archive4.squashfs,
