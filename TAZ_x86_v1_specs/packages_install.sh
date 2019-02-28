@@ -73,6 +73,7 @@ www-client/palemoon
 mail-client/claws-mail
 app-arch/par2cmdline
 dev-python/pyopenssl
+app-admin/keepass
 "
 
 TAZ_packagelist_bootsetup2to6 ="
