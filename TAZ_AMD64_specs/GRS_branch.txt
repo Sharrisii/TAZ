@@ -1,1 +1,3 @@
-
+GRS branch for AMD64 version:
+amd64-musl-vanilla
+See http://distfiles.gentoo.org/experimental/amd64/musl/
