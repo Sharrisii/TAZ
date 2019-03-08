@@ -1,2 +1,3 @@
 Branch of GRS (https://wiki.gentoo.org/wiki/Project:RelEng_GRS) for x86 version:
-?
+i686-musl-vanilla
+See http://distfiles.gentoo.org/experimental/x86/musl/
