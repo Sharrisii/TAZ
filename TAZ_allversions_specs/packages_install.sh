@@ -83,6 +83,7 @@ app-office/gnumeric
 app-office/impressive
 media-gfx/inkscape
 media-gfx/sane-backends
+app-text/tesseract
 media-gfx/gimp
 media-video/mpv
 "
