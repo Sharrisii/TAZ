@@ -1,4 +1,4 @@
-(define (tesseract filename scan_ocr_low_treshold_value scan_ocr_high_treshold_value)
+(define (tesseract filename treshold language)
   (let*
     (
       (image (car (gimp-file-load RUN-NONINTERACTIVE filename filename)))
