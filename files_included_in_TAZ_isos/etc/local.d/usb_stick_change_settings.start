@@ -60,10 +60,10 @@ if [ -f /mnt/*/bootscripts/scanner_setup.sh ]; then
 /mnt/*/bootscripts/scanner_setup.sh
 fi
 
-# Add scan-ocr script to lxpanel menu and make script itself (script located at /bootscripts/scan-ocr.sh)
+# Add additional items to lxpanel menu depending on what boot setup was launched (script located at /bootscripts/bonus_lxpanel_items.sh)
 ##sleep 20
-if [ -f /mnt/*/bootscripts/scan-ocr.sh ]; then
-/mnt/*/bootscripts/scan-ocr.sh
+if [ -f /mnt/*/bootscripts/bonus_lxpanel_items.sh ]; then
+/mnt/*/bootscripts/bonus_lxpanel_items.sh.sh
 fi
 
 # Change settings of additional programs, set up networking (if using modem), ... via usb stick 
