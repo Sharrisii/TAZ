@@ -60,6 +60,12 @@ if [ -f /mnt/*/bootscripts/scanner_setup.sh ]; then
 /mnt/*/bootscripts/scanner_setup.sh
 fi
 
+# Add scan-ocr script to lxpanel menu and make script itself (script located at /bootscripts/scan-ocr.sh)
+##sleep 20
+if [ -f /mnt/*/bootscripts/scan-ocr.sh ]; then
+/mnt/*/bootscripts/scan-ocr.sh
+fi
+
 # Change settings of additional programs, set up networking (if using modem), ... via usb stick 
 # (script located at /bootscripts/other.sh)
 if [ -f /mnt/*/bootscripts/other.sh ]; then
