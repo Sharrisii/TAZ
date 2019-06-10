@@ -48,8 +48,6 @@ x11-misc/slim
 x11-misc/slock
 app-antivirus/clamav
 dev-vcs/git
-dev-vcs/ghi
-dev-ruby/rubygems
 net-fs/nfs-utils
 net-misc/dhcpcd
 net-misc/dhcpcd-ui
