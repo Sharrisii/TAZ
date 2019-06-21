@@ -51,6 +51,7 @@ dev-vcs/git
 net-fs/nfs-utils
 net-misc/dhcpcd
 net-misc/dhcpcd-ui
+net-misc/ntp
 net-misc/wicd
 net-wireless/wpa_supplicant
 net-wireless/wireless-tools
