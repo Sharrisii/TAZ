@@ -11,9 +11,6 @@ source_subpath: default/stage3-i686-musl-vanilla
 
 # overlays currently in use:
 # * musl      (https://anongit.gentoo.org/git/proj/musl.git)
-# * palemoon  (https://github.com/deu/palemoon-overlay.git)
-#   well technically we are using a fork of palemoon, until musl support is merged
-#   https://github.com/VCTLabs/palemoon-overlay
 portage_overlay: /var/lib/layman
 
 # useflags that get applied on top of profile useflags
@@ -69,8 +66,10 @@ livecd/packages:
     app-office/impressive
     app-portage/porthole
     dev-python/httplib2
+    dev-python/pip
     dev-python/requests
     dev-python/requests-oauthlib
+    app-text/tesseract
     dev-util/geany
     dev-vcs/git
     lxde-base/lxappearance
@@ -87,14 +86,13 @@ livecd/packages:
     media-sound/alsaplayer
     media-sound/mps-youtube
     media-video/mpv
-    net-fs/autofs
-    net-fs/nfs-utils
+    net-im/gajim
     net-misc/curl
     net-misc/dhcpcd
     net-misc/dhcpcd-ui
     net-misc/wicd
     net-print/cups
-    net-voip/linphone
+    net-voip/yate
     net-wireless/bluez
     net-wireless/wireless-tools
     sci-calculators/galculator
@@ -107,11 +105,13 @@ livecd/packages:
     sys-block/gparted
     sys-boot/syslinux
     sys-devel/bc
-    www-client/palemoon
     www-plugins/lightspark
+    x11-apps/mesa-progs
     x11-apps/setxkbmap
     x11-apps/xwd
     x11-base/xorg-server
+    x11-libs/libva-vdpau-driver
+    x11-drivers/xf86-video-intel
     x11-drivers/xf86-video-vesa
     x11-misc/gmrun
     x11-misc/pcmanfm
