@@ -11,6 +11,7 @@ sys-apps/openrc
 sys-libs/musl
 x11-base/xorg-server
 x11-drivers/xf86-video-vesa
+x11-drivers/xf86-video-intel
 sys-apps/busybox
 sys-apps/portage
 sys-apps/util-linux
