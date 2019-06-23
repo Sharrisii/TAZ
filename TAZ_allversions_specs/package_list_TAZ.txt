@@ -76,7 +76,7 @@ x11-libs/libvdpau (https://packages.gentoo.org/packages/x11-libs/libvdpau)
 x11-libs/libva (https://packages.gentoo.org/packages/x11-libs/libva)
 x11-terms/sakura (https://packages.gentoo.org/packages/x11-terms/sakura)
 x11-wm/openbox (https://packages.gentoo.org/packages/x11-misc/pcmanfm)
-app-admin/keepass https://packages.gentoo.org/packages/app-admin/keepass)
+app-misc/pwsafe (https://packages.gentoo.org/packages/app-misc/pwsafe )
 
 Boot setup 2 add-on programs:
 app-office/abiword (https://packages.gentoo.org/packages/app-office/abiword)
