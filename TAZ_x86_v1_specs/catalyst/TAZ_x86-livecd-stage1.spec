@@ -105,6 +105,7 @@ livecd/packages:
     sys-block/gparted
     sys-boot/syslinux
     sys-devel/bc
+    www-client/palemoon
     www-plugins/lightspark
     x11-apps/mesa-progs
     x11-apps/setxkbmap
