@@ -25,6 +25,7 @@ usr/portage/profiles/use.local.desc
 +vorbis
 +cdda
 +opengl
++xinerama
 +exif
 +musl
 +curl
