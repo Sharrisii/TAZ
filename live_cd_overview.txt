@@ -4,6 +4,7 @@ on windows or another linux distro). This same program may be available on other
 with that instead). If using windows, ImgBurn can be used.
 You can also place the iso on a usb stick (or memory card placed in a usb adapter) instead of on a cd-r by means of a program such as:
 * Universal USB installer (http://www.pendrivelinux.com/universal-usb-installer-easy-as-1-2-3/)
+* Rufus (https://rufus.ie/)
 * Linux Live USB creator (http://www.linuxliveusb.com/)
 * UNetbootin (https://unetbootin.github.io/)
 Please note that while placing the iso (which contains only boot setup 1) on a usb stick is possible, it is not recommended as 
