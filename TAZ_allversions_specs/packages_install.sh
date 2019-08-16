@@ -22,6 +22,7 @@ sys-devel/bc
 sys-block/gparted
 app-admin/hardinfo
 sys-apps/man-pages
+sys-boot/multibootusb
 lxde-base/lxpanel
 lxde-base/lxrandr
 lxde-base/lxsession
