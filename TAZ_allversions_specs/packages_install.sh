@@ -89,14 +89,12 @@ media-video/mpv
 "
 
 archive7.squashfs_(SecuriTAZ_bundle)_packagelist ="
-TAZ_packagelist_core +
 acsccid linux driver
 app-crypt/eid-mw 
 app-crypt/ledger-live-desktop
 "
 
 archive7.squashfs_(AnTAZ_bundle)_packagelist ="
-TAZ_packagelist_core +
 anbox
 adb
 "
