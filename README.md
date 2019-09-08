@@ -10,8 +10,9 @@ Preferably use either refurbished pc's or 2nd hand pc's as these have a lower en
 Our motto is also to "use your machine untill it breaks" rather than swapping it out for whatever latest fancy that just appeared on the market.
 That way, the environmental impact of your machine is again reduced, and you also save money at the same time.
 Also, repair the machine when broken (if still possible) and maintain it properly to prevent early breakdown.
-Repairing the machine is possible at a local computer repair shop, or you might be able to do it yourself in some cases. 
-To maintain it properly, make sure proper cooling is present (preferably water cooling, heat pipes, larger/more powerful fans or just by improving air flow inside the computer case) and vacuum clean the pc internally every once in a while (to clear out dust buildup which can damage the circuit boards).
+Repairing the machine is possible at a local computer repair shop, or you might be able to do it yourself in some cases.
+If repairing the machine is not possible, you could scavenge any working parts and reuse or sell them (or just give them) to a second-hand shop. If you don't feel like bothering with this, then at least dispose the broken-down machine to a civic amenity site for proper recycling.
+To maintain the machine properly, make sure adequate cooling is present (preferably water cooling, heat pipes, larger/more powerful fans or just by improving air flow inside the computer case) and vacuum clean the pc internally every once in a while (to clear out dust buildup which can damage the circuit boards).
 Upon boot, the data of the selected boot setup on the livecd or liveusb is written to tmpfs (RAM) -so there's not even a need for a 
 regular hard disk to be present (although you will require a fair amount of RAM)-.
 The TAZ livecd/liveusb iso's also include the files found in the /files_included_in_TAZ_isos/ github folder. These files allow the
