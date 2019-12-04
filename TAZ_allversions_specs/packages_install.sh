@@ -41,6 +41,7 @@ dev-python/requests
 dev-python/pip
 dev-util/geany
 app-arch/xarchiver
+app-arch/lz4
 media-gfx/gpicview
 www-plugins/lightspark
 net-im/gajim
