@@ -1,1 +1,1 @@
-This folder contains the x86 TAZ iso.
+The x86 TAZ iso is located at https://github.com/Sharrisii/TAZ/releases.
