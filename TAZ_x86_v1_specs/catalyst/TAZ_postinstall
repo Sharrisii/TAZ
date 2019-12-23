@@ -3,6 +3,16 @@
 echo "***************************"
 echo "** Begin TAZ postinstall **"
 
+echo "* create addon images for boot modes"
+
+mkdir /addons
+
+for LIST in /build/lists/*.pkgs ; do
+  NAME=$(basename ${LIST%%.pkgs}) 
+  FILE=/addons/$NAME.tar.lz4
+  /build/scripts/make-addon-tarball.sh $FILE `cat $LIST`
+done
+
 echo "* fixup homedir ownership"
 
 # make sure taz homedir ends up owned by taz, since it will
@@ -27,6 +37,8 @@ cp /etc/skel/.bashrc /root/.bashrc
 
 echo "* enable services"
 
+rc-update add fixfstab sysinit
+rc-update add addons default
 rc-update add dbus default
 rc-update add set-passwd default
 

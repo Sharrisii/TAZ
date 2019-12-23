@@ -1,0 +1,4 @@
+# required by dev-lang/spidermonkey-52.9.1_pre1::gentoo
+# required by sys-auth/polkit-0.115-r1::gentoo
+# required by sys-auth/consolekit-1.2.1::gentoo[policykit]
+>=dev-lang/python-2.7.15:2.7 sqlite

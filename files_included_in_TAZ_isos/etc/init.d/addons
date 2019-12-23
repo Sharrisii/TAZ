@@ -1,0 +1,55 @@
+#!/sbin/openrc-run
+# Copyright 2014 Gentoo Foundation
+# Distributed under the terms of the GNU General Public License v2
+
+description="mount TAZ addons as rootfs overlays"
+
+BOOTPARAM_FILE=/proc/cmdline
+ADDON_EXTENSION=tar.lz4
+
+depend()
+{
+	need dev
+}
+
+get_addon_list()
+{
+	grep -o "addon=[^[[:space:]]*" $BOOTPARAM_FILE | sed "s/addon=//"
+}
+
+find_addon()
+{
+	ADDON_NAME="$1"
+	# probably will only be one image found, but just in case...
+	find /mnt/sd* /mnt/cdrom -name $ADDON_NAME.$ADDON_EXTENSION | head -n1
+}
+
+enable_addon()
+{
+	ADDON_IMAGE="$1"
+
+	tar -I lz4 -xf $ADDON_IMAGE -C /
+}
+
+start()
+{
+	ebegin "Mounting TAZ addons"
+	rc=0
+
+	ADDONS=`get_addon_list`
+	if [ -n "$ADDONS" ] ; then
+		for A in $ADDONS ; do
+			ADDON_IMAGE=`find_addon $A`
+			if [ -z "$ADDON_IMAGE" ] ; then
+				ewarn "$A missing"
+				continue
+			else
+				einfo "$A found"
+			fi
+			enable_addon $ADDON_IMAGE
+		done
+	else
+		einfo "(none selected)"
+	fi
+	eend $rc
+}

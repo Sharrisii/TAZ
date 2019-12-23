@@ -1,1 +1,1 @@
-net-im/gajim +jingle
+net-im/gajim -zeroconf

@@ -1,0 +1,2 @@
+net-voip/linphone -video
+media-libs/mediastreamer -X -opengl

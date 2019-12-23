@@ -1,9 +1,9 @@
 subarch: i686
-version_stamp: taz-test1
+version_stamp: taz-v1.0-beta1
 target: livecd-stage1
 rel_type: default
 profile: default/linux/x86/17.0/musl
-snapshot: taz-test1
+snapshot: taz-v1.0-beta1
 portage_confdir: /etc/catalyst/portage
 
 # seed stage is from http://distfiles.gentoo.org/experimental/x86/musl/
@@ -55,10 +55,12 @@ livecd/packages:
     app-admin/hardinfo
     app-admin/sudo
     app-antivirus/clamav
+    app-arch/lz4
     app-arch/par2cmdline
     app-arch/xarchiver
     app-cdr/xfburn
     app-misc/livecd-tools
+    app-misc/pwsafe
     app-editors/leafpad
     app-editors/nano
     app-office/abiword
@@ -83,6 +85,7 @@ livecd/packages:
     media-gfx/gimp
     media-gfx/gpicview
     media-gfx/inkscape
+    media-gfx/sane-backends
     media-sound/alsaplayer
     media-sound/mps-youtube
     media-video/mpv
@@ -90,6 +93,7 @@ livecd/packages:
     net-misc/curl
     net-misc/dhcpcd
     net-misc/dhcpcd-ui
+    net-misc/ntp
     net-misc/wicd
     net-print/cups
     net-voip/yate
@@ -105,6 +109,7 @@ livecd/packages:
     sys-block/gparted
     sys-boot/syslinux
     sys-devel/bc
+    sys-fs/squashfs-tools
     www-client/palemoon
     www-plugins/lightspark
     x11-apps/mesa-progs
